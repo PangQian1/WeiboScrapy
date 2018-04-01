@@ -1,12 +1,6 @@
-str = 'id=1865978564&refer_flag=1005050006'
 
-def deal(str):
-    pos = str.index('&')
-    a = str[3:pos]
-    return a
-
-print(deal(str))
-
+a = (3,4,5)
+print(a[0])
 
 
 '''
