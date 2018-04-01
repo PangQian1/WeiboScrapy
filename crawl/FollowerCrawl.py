@@ -1,7 +1,7 @@
 from selenium import webdriver
 import re
-from web_crawl import Database
-from web_crawl import Fan
+from database import BaseCursor
+from database import UserInfo
 
 #登录微博的过程
 def login_weibo(name, password, driver):
