@@ -4,8 +4,8 @@ from database import UserFollowers
 from crawl import FollowerCrawl
 from crawl import BaseCrawl
 
-#进入要研究的微博粉丝列表，并返回url，粉丝的数量，账户的id，返回的是一个list，可通过下标访问
-def crawlFanUrlList(user_info, driver):
+#进入要研究的微博粉丝列表，账户的id
+def searchGoalAccount(user_info, driver):
     # 获取想要研究的微博名
     goal_weibo = input('Please input the the weiboName that you want to search:')
 
@@ -16,10 +16,29 @@ def crawlFanUrlList(user_info, driver):
     #driver.find_element_by_css_selector('#pl_common_searchTop > div.search_head.clearfix > div.search_head_formbox > div.search_input > div > div.searchBtn_box > div > a').click()
 
     #找到后，获取账号的ucid
-    info = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_pic > a > img').get_attribute('usercard')
-    ucid = BaseCrawl.getID(info)
-    data = (ucid, '', '', '', '', '')
+    ucid_str = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_pic > a > img').get_attribute('usercard')
+    ucid     = BaseCrawl.getID(ucid_str)
+    name     = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_detail > p.person_name > a.W_texta.W_fb > em').text
+    address  = driver.find_element_by_xpath('//*[@id="pl_user_feedList"]/div[1]/div/div/div/div[1]/div[3]/p[2]/span[2]').text
+
+    sex_str  = driver.find_element_by_xpath('//*[@id="pl_user_feedList"]/div[1]/div/div/div/div[1]/div[3]/p[2]/span[1]').get_attribute('class')
+    if sex_str == 'male m_icon':
+        sex = 'm'
+    else:
+        sex = 'f'
+
+    try:
+        introduction = driver.find_element_by_xpath('//*[@id="pl_user_feedList"]/div[1]/div/div/div/div[1]/div[3]/p[3]').text
+    except:
+        introduction = ''
+
+    data = (ucid, name, sex, address, '', introduction)
     user_info.createUserInfo(data)
+
+    return ucid
+
+#定位到目标账户的粉丝列表页，并且获取粉丝数目，返回粉丝的url，返回的是一个list，可通过下标访问内容
+def locateFanListUrl(driver):
 
     # 搜索成功后，在列表的第一项点击进入粉丝列表
     res = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_detail > p.person_num > span:nth-child(2) > a')
@@ -36,14 +55,13 @@ def crawlFanUrlList(user_info, driver):
     fan_num = int(str)
     #print(fan_num)
 
-    return url, fan_num, ucid
+    return url, fan_num
 
 #爬取粉丝列表
-def crawlFanList(url_fanList, user_info, driver):
+def crawlFanList(url_fanList, host, user_info, driver):
     #url_fanList是一个list，第一项是粉丝列表的url，第二项是粉丝的数量
     url = url_fanList[0]
     num = url_fanList[1]
-    host = url_fanList[2]
     print('共有%d个粉丝' % num)
 
     if num < 20:
@@ -139,5 +157,6 @@ if __name__ == "__main__":
     driver.maximize_window()
     user_info = UserInfo.UserInfo()
 
-    url_fanList = crawlFanUrlList(user_info, driver)
-    crawlFanList(url_fanList, user_info, driver)
+    ucid = searchGoalAccount(user_info, driver)
+    url_fanList = locateFanListUrl(driver)
+    crawlFanList(url_fanList, ucid, user_info, driver)

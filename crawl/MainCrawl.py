@@ -14,5 +14,6 @@ if __name__ == "__main__":
 
     LoginCrawl.loginWeibo('17865169752', '1835896411', driver)
 
-    url_fan_url_list = FansCrawl.crawlFanUrlList(user_info, driver)
-    FansCrawl.crawlFanList(url_fan_url_list, user_info, driver)
+    goal_ucid = FansCrawl.searchGoalAccount(user_info, driver)
+    url_fanList = FansCrawl.locateFanListUrl(driver)
+    FansCrawl.crawlFanList(url_fanList, goal_ucid, user_info, driver)

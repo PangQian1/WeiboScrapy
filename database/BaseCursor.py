@@ -25,6 +25,11 @@ class BaseCursor(object):
         self.cursor.execute(sql % data)
         return self.cursor.fetchall()
 
+    # 查询数据
+    def queryOp(self, sql, data):
+        res = self.cursor.execute(sql % data)
+        return res
+
     # 更新一条数据
     def update(self, sql, data):
         self.cursor.execute(sql % data)
