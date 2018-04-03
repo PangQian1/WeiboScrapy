@@ -4,25 +4,24 @@ class UserArticle(object):
     def __init__(self):
         self.cursor = BaseCursor.BaseCursor()
 
-    #给定目标账户的id，搜索返回其粉丝关注的所有账户的id
-    def searchFollowersUcid(self, goal_ucid):
+    #插入微博信息
+    def createUserArticle(self, data):
+        mid  = data[1]
+        select_sql = "select * from weibo_user_article WHERE mid = '%s'"
+        res = self.cursor.query(select_sql, mid)
+        if res:
+            # 已经存在
+            pass
+        else:
+            # 不存在，执行插入操作
 
-        sql = "SELECT ucid FROM weibo_user_follower WHERE follower_ucid IN " \
-              "(select follower_ucid from weibo_user_follower where ucid = '%s')"
+            sql = "INSERT INTO weibo_user_article " \
+                  "(ucid, mid, content, publish_time, publish_device, transmit, comment, praise) " \
+                  "VALUES ( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')"
 
-        #sql = "select follower_ucid from weibo_user_follower where ucid = '%s'"
-        #allFansUcid = self.cursor.query(sql, goal_ucid)
-
-        # res是一个只读数组嵌套只读数组，通过res[i][0]访问，存放的是int型
-        res = self.cursor.query(sql, goal_ucid)
-        #m = res[8][0]
-        #print(type(m))
-        #print(m)
-        return res
-
-
-
+            self.cursor.create(sql, data)
 
 if __name__ == '__main__':
     user_article = UserArticle()
-    user_article.searchFollowersUcid('1880883723')
+    user_article.createUserArticle(("35446457", '123488666', '小盘此次烧开后发布', '3月6日', '苹果X',
+                                    '122', '444', '4546'))

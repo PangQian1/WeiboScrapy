@@ -16,3 +16,9 @@ def getID(str):
     pos = str.index('&')
     res = str[3:pos]
     return res
+
+# 过滤表情
+def filterEmoji(str):
+    str_list = re.findall("[a-zA-Z0-9\x80-\xff]", str)
+
+    return '' . join(str_list)
