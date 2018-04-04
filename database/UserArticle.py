@@ -3,7 +3,7 @@ from database import BaseCursor
 class UserArticle(object):
     def __init__(self):
         self.cursor = BaseCursor.BaseCursor()
-        
+
     #插入微博信息
     def createUserArticle(self, data):
         mid  = data[1]
@@ -11,10 +11,10 @@ class UserArticle(object):
         res = self.cursor.query(select_sql, mid)
         if res:
             # 已经存在
+            print('更新' + mid)
             self.updateUserArticle(mid, (data[2], data[5], data[6], data[7]))
         else:
             # 不存在，执行插入操作
-
             sql = "INSERT INTO weibo_user_article " \
                   "(ucid, mid, content, publish_time, publish_device, transmit, comment, praise) " \
                   "VALUES ( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')"
