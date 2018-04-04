@@ -100,7 +100,7 @@ def crawlFanList(url_fanList, host, user_info, driver):
             except:
                 introduction = ''
 
-            data_userInfo = (ucid, name, sex, address, '', introduction)
+            data_userInfo = (ucid, name, sex, address, '', BaseCrawl.filterEmoji(introduction))
 
             user_info.createUserInfo(data_userInfo)
 

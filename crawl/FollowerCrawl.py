@@ -30,7 +30,7 @@ def crawlFollowerList(follower_ucid, user_follower, user_info, driver):
                 user_follower.createUserFollower(data_userFollower)
 
                 #同时更新weibo_user_info表
-                data_userInfo = (ucid, name, sex, address, '', introduction)
+                data_userInfo = (ucid, name, sex, address, '', BaseCrawl.filterEmoji(introduction))
                 user_info.createUserInfo(data_userInfo)
 
             except:
