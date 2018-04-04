@@ -39,15 +39,12 @@ def crawlArticle(ucid, driver):
             publish_device = publish_tags[1].text
 
             content = article.find_elements_by_css_selector("div.WB_text.W_f14")[0].text
-            print(content)
             content = BaseCrawl.filterEmoji(content)
-            print(content)
-            print('22222')
 
             article_foot = article.find_elements_by_css_selector("div.WB_handle > ul > li")
-            transmit = article_foot[1].text
-            comment  = article_foot[2].text
-            praise   = article_foot[3].text
+            transmit = BaseCrawl.filterNumber(article_foot[1].text)
+            comment  = BaseCrawl.filterNumber(article_foot[2].text)
+            praise   = BaseCrawl.filterNumber(article_foot[3].text)
 
             user_article.createUserArticle((ucid,
                                             mid,
