@@ -25,7 +25,7 @@ class UserFollowers(object):
     #给定目标账户的id，搜索返回其粉丝关注的所有账户的id
     def searchFollowersUcid(self, goal_ucid):
 
-        sql = "SELECT ucid FROM weibo_user_follower WHERE follower_ucid IN " \
+        sql = "SELECT DISTINCT ucid FROM weibo_user_follower WHERE follower_ucid IN " \
               "(select follower_ucid from weibo_user_follower where ucid = '%s')"
 
         #sql = "select follower_ucid from weibo_user_follower where ucid = '%s'"
@@ -41,10 +41,8 @@ class UserFollowers(object):
 
 if __name__ == "__main__":
     a = UserFollowers()
-    a.createUserFollower(('12415', '34576788'))
-    a.createUserFollower(('12415', '34576788'))
-    a.createUserFollower(('124154546', '34576788'))
-
+    b = a.searchFollowersUcid('1880883723')
+    print(b)
 
 
 

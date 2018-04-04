@@ -2,30 +2,54 @@ import time
 from selenium import webdriver
 from crawl import LoginCrawl
 from crawl import BaseCrawl
-from database import UserInfo
 from database import UserArticle
+from database import UserFollowers
 
+# 文章爬虫
 def crawlArticle(ucid, driver):
     user_article = UserArticle.UserArticle()
 
-    user_home_url = 'https://weibo.com/u/' + ucid + '?is_search=0&visible=0&is_all=1&is_tag=0&profile_ftype=1&page=2#feedtop'
-    driver.get(user_home_url)
+    for page in range(3):
+        page += 1
+        print('UCID:' + ucid)
+        print('页数:' + str(page))
+        user_home_url = 'https://weibo.com/u/' + ucid + '?is_all=1&page=' + str(page)
+        driver.get(user_home_url)
 
-    while (True):
-        try:
-            driver.find_element_by_css_selector('div.W_pages')
-            nextPage = True
-        except:
-            nextPage = False
+        next = 1
+        while (True):
+            try:
+                driver.find_element_by_css_selector('div.W_pages')
+                nextPage = True
+            except:
+                nextPage = False
 
-        if nextPage:
+            if nextPage:
+                break
+            driver.execute_script("window.scrollBy(0,10000)")
+            # 存在有的微博第一页不全
+            next += 1
+            if next > 4:
+                break
+            time.sleep(1)
+
+        articles = driver.find_elements_by_css_selector("div.WB_feed.WB_feed_v3.WB_feed_v4 > div")
+        print('文章数量：' + str(len(articles) - 2))
+        if len(articles) < 2:
+            print('已经爬完该用户文章~' + ucid)
             break
-        driver.execute_script("window.scrollBy(0,10000)")
-        time.sleep(1)
 
-    articles = driver.find_elements_by_css_selector("#Pl_Official_MyProfileFeed__22 > div > div")
-    print(len(articles))
+        for article in articles:
+            try:
+                article.find_element_by_css_selector("a.WB_text_opt").click()
+                print('有展开全文')
+            except:
+                pass
 
+        dealArticles(ucid, articles, user_article)
+
+# 处理爬取下来的文章
+def dealArticles(ucid, articles, user_article):
     for article in articles:
         try:
             # 微博ID
@@ -35,8 +59,13 @@ def crawlArticle(ucid, driver):
             publish_time   = publish_tags[0].text
             publish_device = publish_tags[1].text
 
-            content = article.find_elements_by_css_selector("div.WB_text.W_f14")[0].text
-            content = BaseCrawl.filterEmoji(content)
+            article_contents = article.find_elements_by_css_selector("div.WB_text.W_f14")
+            print(len(article_contents))
+            content = article_contents[0].text
+            if len(article_contents) > 1:
+                content = article_contents[1].text
+
+            print(content)
 
             # 文章的转发 点赞 评论
             article_foot = article.find_elements_by_css_selector("div.WB_handle > ul > li")
@@ -57,15 +86,21 @@ def crawlArticle(ucid, driver):
         except:
             pass
 
+
 if __name__ == "__main__":
     # 使用谷歌浏览器
     driver = webdriver.Chrome()
     driver.get('http://weibo.com/login.php')
     # 使窗口最大化显示出登录界面
     driver.maximize_window()
-    user_info = UserInfo.UserInfo()
+    LoginCrawl.loginWeibo('15901057573', 'zs123456', driver)
 
-    LoginCrawl.loginWeibo('17865169752', '1835896411', driver)
-    crawlArticle('1768305123', driver)
+    # 获取ucid列表
+    SDU_ID    = '3237705130'
+    user_follower = UserFollowers.UserFollowers()
+    ucid_list     = user_follower.searchFollowersUcid(SDU_ID)
 
+    for ucid in ucid_list:
+        crawlArticle(ucid, driver)
 
+    # crawlArticle('5983730812', driver)

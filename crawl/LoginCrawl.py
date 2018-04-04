@@ -1,5 +1,7 @@
+import time
 from selenium import webdriver
 from database import UserInfo
+
 
 #登录微博的过程
 def loginWeibo(name, password, driver):
@@ -30,6 +32,7 @@ def loginWeibo(name, password, driver):
         driver.find_element_by_xpath('//*[@id="pl_login_form"]/div/div[3]/div[3]/div/input').send_keys(identify_code)
         # 再次点击登录
         driver.find_element_by_xpath('//*[@id="pl_login_form"]/div/div[3]/div[6]/a').click()
+        time.sleep(3)
     except:
         pass
 
