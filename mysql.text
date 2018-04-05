@@ -28,6 +28,7 @@ CREATE TABLE `weibo_user_article` (
   `ucid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '微博用户ID',
   `mid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '微博ID',
   `content` text NOT NULL DEFAULT '' COMMENT '微博内容',
+  `content` text NOT NULL DEFAULT '' COMMENT '微博内容',
   `publish_time` varchar(32) NOT NULL COMMENT '微博发布时间',
   `publish_device` varchar(32) NOT NULL COMMENT '微博发布的设备来源',
   `transmit` varchar(32) NOT NULL COMMENT '微博转发数量',
@@ -38,3 +39,6 @@ CREATE TABLE `weibo_user_article` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1000000 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='微博用户发布微博';
 
+
+https://blog.csdn.net/eastmount/article/details/50473675
+https://blog.csdn.net/Eastmount/article/details/50256163

@@ -114,8 +114,11 @@ def crawlFanList(url_fanList, host, user_info, driver):
             firstHandle = driver.current_window_handle
             #handleDepot = []
             #handleDepot.append(firstHandle)
-            fan.find_element_by_css_selector('dl>dd>div.info_connect>span>em>a').click()#打开粉丝关注账户的列表页
-            handles = driver.window_handles
+            try:
+                fan.find_element_by_css_selector('dl>dd>div.info_connect>span>em>a').click()  # 打开粉丝关注账户的列表页
+                handles = driver.window_handles
+            except:
+                pass
 
             for handle in handles:  # 切换窗口
                 if handle != firstHandle:
