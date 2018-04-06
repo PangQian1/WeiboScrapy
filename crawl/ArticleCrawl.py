@@ -59,11 +59,22 @@ def dealArticles(ucid, articles, user_article):
             publish_time   = publish_tags[0].text
             publish_device = publish_tags[1].text
 
+            # 获取文章内容
             article_contents = article.find_elements_by_css_selector("div.WB_text.W_f14")
             print(len(article_contents))
             content = article_contents[0].text
             if len(article_contents) > 1:
                 content = article_contents[1].text
+            print(content)
+
+            # 获取转发文章的内容
+            try:
+                article_expand = article.find_elements_by_css_selector("div.WB_feed_expand")
+                content += article_expand[0].text
+                print('转发微博')
+            except:
+                pass
+            content = BaseCrawl.filterEmoji(content)
 
             print(content)
 
@@ -100,7 +111,7 @@ if __name__ == "__main__":
     user_follower = UserFollowers.UserFollowers()
     ucid_list     = user_follower.searchFollowersUcid(SDU_ID)
 
-    for ucid in ucid_list:
-        crawlArticle(ucid, driver)
+    # for ucid in ucid_list:
+    #     crawlArticle(ucid, driver)
 
-    # crawlArticle('5983730812', driver)
+    crawlArticle('1768305123', driver)

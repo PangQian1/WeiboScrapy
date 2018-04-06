@@ -1,5 +1,9 @@
 数据库设计
 
+ALTER TABLE weibo_user_info
+ADD `keywords` text NOT NULL DEFAULT '' COMMENT '微博用户关键词' AFTER introduction;
+
+
 CREATE TABLE `weibo_user_info` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
   `ucid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '微博用户ID',
@@ -8,6 +12,7 @@ CREATE TABLE `weibo_user_info` (
   `address` varchar(256) NOT NULL COMMENT '微博用户地址',
   `birthday` varchar(32) NOT NULL COMMENT '微博用户生日',
   `introduction` varchar(512) NOT NULL COMMENT '微博用户简介',
+  `keywords` text NOT NULL DEFAULT '' COMMENT '微博用户关键词',
   `ctime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   PRIMARY KEY (`id`),
@@ -27,7 +32,6 @@ CREATE TABLE `weibo_user_article` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
   `ucid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '微博用户ID',
   `mid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '微博ID',
-  `content` text NOT NULL DEFAULT '' COMMENT '微博内容',
   `content` text NOT NULL DEFAULT '' COMMENT '微博内容',
   `publish_time` varchar(32) NOT NULL COMMENT '微博发布时间',
   `publish_device` varchar(32) NOT NULL COMMENT '微博发布的设备来源',
