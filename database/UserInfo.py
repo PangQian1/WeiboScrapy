@@ -47,7 +47,7 @@ class UserInfo(object):
 
     # 获取用户信息
     def getUserInfo(self, ucids):
-        ucid_list = ','.join(ucids)
+        ucid_list = ',' . join(ucids)
         print(ucid_list);
         sql = "SELECT * FROM weibo_user_info WHERE UCID IN (%s)"
 

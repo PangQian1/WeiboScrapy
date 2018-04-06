@@ -9,7 +9,8 @@ class BaseCursor(object):
             user    = 'root',
             passwd  = '',
             db      = 'graduation_design',
-            charset ='utf8'
+            charset = 'utf8',
+            cursorclass = pymysql.cursors.DictCursor
         )
 
         # 获取游标
@@ -24,11 +25,6 @@ class BaseCursor(object):
     def query(self, sql, data):
         self.cursor.execute(sql % data)
         return self.cursor.fetchall()
-
-    # 查询数据
-    def queryOp(self, sql, data):
-        res = self.cursor.execute(sql % data)
-        return res
 
     # 更新一条数据
     def update(self, sql, data):

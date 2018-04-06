@@ -33,6 +33,20 @@ class UserArticle(object):
 
         self.cursor.update(sql, data)
 
+    # 获取用户发布的微博
+    def getUserArticle(self, ucid, offset = 0,  limit = 100):
+        select_sql    = "SELECT * FROM weibo_user_article WHERE ucid = '%s' LIMIT " + str(offset) + "," + str(limit)
+        user_articles = self.cursor.query(select_sql, (ucid))
+        return user_articles
+
+    # 对用户的微博分词
+    def splitUserArticle(self, mid, content_split):
+        sql = "UPDATE weibo_user_article SET " \
+              "content_split  = '%s' " \
+              "WHERE mid = " + str(mid)
+
+        self.cursor.update(sql, (content_split))
+
 if __name__ == '__main__':
     user_article = UserArticle()
     user_article.createUserArticle(("35446457", '123488666', '小盘此次烧开后发布', '3月6日', '苹果X',

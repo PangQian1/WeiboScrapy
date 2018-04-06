@@ -35,7 +35,7 @@ class UserFollowers(object):
         result = self.cursor.query(sql, goal_ucid)
         ucid_list = []
         for value in result:
-             ucid_list.append(str(value[0]))
+             ucid_list.append(str(value['ucid']))
 
         return ucid_list
 

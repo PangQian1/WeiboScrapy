@@ -3,6 +3,8 @@
 ALTER TABLE weibo_user_info
 ADD `keywords` text NOT NULL DEFAULT '' COMMENT '微博用户关键词' AFTER introduction;
 
+ALTER TABLE weibo_user_article
+ADD `content_split` text NOT NULL DEFAULT '' COMMENT '微博内容' AFTER content;
 
 CREATE TABLE `weibo_user_info` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
@@ -33,6 +35,7 @@ CREATE TABLE `weibo_user_article` (
   `ucid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '微博用户ID',
   `mid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '微博ID',
   `content` text NOT NULL DEFAULT '' COMMENT '微博内容',
+  `content_split` text NOT NULL DEFAULT '' COMMENT '微博分词内容',
   `publish_time` varchar(32) NOT NULL COMMENT '微博发布时间',
   `publish_device` varchar(32) NOT NULL COMMENT '微博发布的设备来源',
   `transmit` varchar(32) NOT NULL COMMENT '微博转发数量',
@@ -46,3 +49,6 @@ CREATE TABLE `weibo_user_article` (
 
 https://blog.csdn.net/eastmount/article/details/50473675
 https://blog.csdn.net/Eastmount/article/details/50256163
+
+介绍pymysql
+https://www.cnblogs.com/wt11/p/6141225.html
