@@ -400,3 +400,10 @@ JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=15232746
 JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1523274644232, line 207: unreachable code after return statement
 JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1523274644232, line 174: unreachable code after return statement
 JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1523274644232, line 139: unreachable code after return statement
+[Parent 2304, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2304, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11188, Chrome_ChildThreaUnable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1523276061978	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Regist

@@ -22,8 +22,16 @@ def filterEmoji(str):
     str_list = re.findall(r"[a-zA-Z0-9\u4e00-\u9fa5]+|[+—！，。？、~@#￥%.&*（）]+|[+#-?()\.!\/_,$%^*\+\"\']+", str)
 
     res =  '' . join(str_list)
-    if res[len(res) - 5 : ] == '收起全文d':
-        res = res[ : len(res) - 5]
+
+    try:
+
+        if res[len(res) - 5 : ] == '收起全文d':
+            res = res[ : len(res) - 5]
+        if res[ : 4] == '转发微博':
+            res = res[4 : ]
+
+    except:
+        pass
 
     return res
 
