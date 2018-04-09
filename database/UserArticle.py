@@ -22,7 +22,7 @@ class UserArticle(object):
             self.cursor.create(sql, data)
             print('添加微博：' + data[0] + '  ' + data[1])
 
-    #插入微博信息
+    #更新微博信息
     def updateUserArticle(self, mid, data):
         sql = "UPDATE weibo_user_article SET " \
               "content  = '%s', " \

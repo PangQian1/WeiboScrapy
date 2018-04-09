@@ -21,7 +21,11 @@ def getID(str):
 def filterEmoji(str):
     str_list = re.findall(r"[a-zA-Z0-9\u4e00-\u9fa5]+|[+—！，。？、~@#￥%.&*（）]+|[+#-?()\.!\/_,$%^*\+\"\']+", str)
 
-    return '' . join(str_list)
+    res =  '' . join(str_list)
+    if res[len(res) - 5 : ] == '收起全文d':
+        res = res[ : len(res) - 5]
+
+    return res
 
 # 提取数字
 def filterNumber(str):

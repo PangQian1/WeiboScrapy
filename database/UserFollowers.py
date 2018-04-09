@@ -31,7 +31,7 @@ class UserFollowers(object):
         #sql = "select follower_ucid from weibo_user_follower where ucid = '%s'"
         #allFansUcid = self.cursor.query(sql, goal_ucid)
 
-        # res是一个只读数组嵌套只读数组，通过res[i][0]访问，存放的是int型
+        # res变成了字典
         result = self.cursor.query(sql, goal_ucid)
         ucid_list = []
         for value in result:

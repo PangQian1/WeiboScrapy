@@ -8,7 +8,7 @@ from crawl import ArticleCrawl
 if __name__ == "__main__":
 
     # 使用谷歌浏览器
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     driver.get('http://weibo.com/login.php')
     # 使窗口最大化显示出登录界面
     driver.maximize_window()
@@ -19,8 +19,8 @@ if __name__ == "__main__":
 
     # 爬取粉丝
     goal_ucid = FansCrawl.searchGoalAccount(user_info, driver)
-    url_fanList = FansCrawl.locateFanListUrl(driver)
-    FansCrawl.crawlFanList(url_fanList, goal_ucid, user_info, driver)
+    #url_fanList = FansCrawl.locateFanListUrl(driver)
+    #FansCrawl.crawlFanList(url_fanList, goal_ucid, user_info, driver)
 
     # 爬取微博
     user_follower = UserFollowers.UserFollowers()
