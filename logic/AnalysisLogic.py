@@ -2,6 +2,7 @@ import jieba
 import jieba.analyse
 from logic import BaseLogic
 from database import UserArticle
+from database import UserFollowers
 '''
 结巴中文分词涉及到的算法包括：
         (1) 基于Trie树结构实现高效的词图扫描，生成句子中汉字所有可能成词情况所构成的有向无环图（DAG)；
@@ -25,12 +26,12 @@ class AnalysisLogic(BaseLogic.BaseLogic):
 
             articles = user_article.getUserArticle(ucid, offset, limit)
             offset   += limit
-            print(offset)
+            #print(offset)
             if not articles :
                 break
 
             for article in articles:
-                print(article)
+                #print(article)
                 # 默认的分词模式
                 seg_list = jieba.cut(article['content'], cut_all = False)
 
@@ -38,7 +39,7 @@ class AnalysisLogic(BaseLogic.BaseLogic):
 
                 user_article.splitUserArticle(article['mid'], content_split)
 
-                print(u"[默认模式]: ", "/ ".join(seg_list))
+                #print(u"[默认模式]: ", "/ ".join(seg_list))
 
 
     def test(self):
@@ -82,5 +83,12 @@ class AnalysisLogic(BaseLogic.BaseLogic):
 
 if __name__ == '__main__':
     a = AnalysisLogic()
-    #a.splitArticle('1768305123')
-    a.test()
+    a.splitArticle('5359730794')
+    #a.test()
+    input('test')
+
+    user_followers = UserFollowers.UserFollowers()
+    ucid_list = user_followers.searchFollowersUcid('1821058982')
+
+    for ucid in ucid_list:
+        a.splitArticle(ucid)

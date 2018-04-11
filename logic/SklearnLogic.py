@@ -2,6 +2,7 @@ import time
 import codecs
 from logic import BaseLogic
 from database import UserArticle
+from database import UserFollowers
 from sklearn import feature_extraction
 from sklearn.cluster import KMeans
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -30,17 +31,53 @@ class SklearnLogic(BaseLogic.BaseLogic):
         通过 get_feature_names()可看到所有文本的关键字，通过 toarray() 可看到词频矩阵的结果。
         TfidfTransformer也有个 fit_transform 函数，它的作用是计算 tf-idf 值。
     '''
-    def getTFIDF(self, ucid):
+
+    #给定一个ucid，返回该用户发布的所有分词后的微博
+    def getAllArticles(self, ucid):
+
+        content = ''
+
+        user_article = UserArticle.UserArticle()
+
+        limit = 100
+        offset = 0
+
+        while (True):
+            articles = user_article.getUserArticle(ucid, offset, limit)
+
+            offset += limit
+
+            if not articles:
+                break
+
+            for article in articles:
+                # print(article)
+                #中间要以空格隔开
+                content = content + ' ' + article['content_split']
+
+        #print(content)
+        return content
+
+    #生成待处理的文档，其中ucid_list为用户id列表，corpus为对应的每个用户发布的所有经过空格分割的分词后的微博
+    def generateDocument(self, ucid, ucid_list, corpus):
+
+        user_followers = UserFollowers.UserFollowers()
+        ucid_list_original = user_followers.searchFollowersUcid(ucid)
+
+        for ulo in ucid_list_original:
+            res = self.getAllArticles(ulo)
+            if res != '':
+                ucid_list.append(ulo)
+                corpus.append(res)
+
+
+    #计算tfidf
+    def calculateTFIDF(self, ucid):
+
+        ucid_list = []  # 用户列表
         corpus = []  # 文档预料 空格连接
 
-        limit  = 100
-        offset = 0
-        user_article = UserArticle.UserArticle()
-        articles = user_article.getUserArticle(ucid, offset, limit)
-
-        for article in articles:
-            print(article)
-            corpus.append(article['content_split'])
+        self.generateDocument(ucid, ucid_list, corpus)
 
         # 将文本中的词语转换为词频矩阵 矩阵元素a[i][j] 表示j词在i类文本下的词频
         vectorizer = CountVectorizer()
@@ -63,7 +100,7 @@ class SklearnLogic(BaseLogic.BaseLogic):
             result.write(word[j] + ' ')
         result.write('\r\n\r\n')
 
-        # 打印每类文本的tf-idf词语权重，第一个for遍历所有文本，第二个for便利某一类文本下的词语权重
+        # 打印每类文本的tf-idf词语权重，第一个for遍历所有文本，第二个for遍历某一类文本下的词语权重
         for i in range(len(weight)):
             print(u"-------这里输出第", i, u"类文本的词语tf-idf权重------")
 
@@ -140,5 +177,7 @@ class SklearnLogic(BaseLogic.BaseLogic):
 
 if __name__ == '__main__':
     a = SklearnLogic()
-    weight = a.getTFIDF('1768305123')
-    a.getKmeans(weight)
+    #weight = a.getTFIDF('1768305123')
+    #a.getKmeans(weight)
+
+    print(a.getAllArticles('5359730794'))
