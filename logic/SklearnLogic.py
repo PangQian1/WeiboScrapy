@@ -79,6 +79,9 @@ class SklearnLogic(BaseLogic.BaseLogic):
 
         self.generateDocument(ucid, ucid_list, corpus)
 
+        print(len(ucid_list))
+        print(len(corpus))
+
         # 将文本中的词语转换为词频矩阵 矩阵元素a[i][j] 表示j词在i类文本下的词频
         vectorizer = CountVectorizer()
 
@@ -93,8 +96,8 @@ class SklearnLogic(BaseLogic.BaseLogic):
 
         # 将tf-idf矩阵抽取出来，元素w[i][j]表示j词在i类文本中的tf-idf权重
         weight = tfidf.toarray()
-
-        resName = "BaiduTfidf_Result.txt"
+        '''
+        resName = "result.txt"
         result  = codecs.open(resName, 'w', 'utf-8')
         for j in range(len(word)):
             result.write(word[j] + ' ')
@@ -109,13 +112,13 @@ class SklearnLogic(BaseLogic.BaseLogic):
             result.write('\r\n\r\n')
 
         result.close()
-
+        '''
         return weight
 
     # K-means聚类
     def getKmeans(self, weight):
         print('Start Kmeans:')
-        clf = KMeans(n_clusters = 20)
+        clf = KMeans(n_clusters = 5)
         s   = clf.fit(weight)
         print(s)
 
@@ -180,4 +183,5 @@ if __name__ == '__main__':
     #weight = a.getTFIDF('1768305123')
     #a.getKmeans(weight)
 
-    print(a.getAllArticles('5359730794'))
+    weight = a.calculateTFIDF('1821058982')
+    a.getKmeans(weight)
