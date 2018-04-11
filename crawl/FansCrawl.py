@@ -44,6 +44,7 @@ def locateFanListUrl(driver):
     res = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_detail > p.person_num > span:nth-child(2) > a')
     addr_fanList = res.get_attribute('href')
     driver.get(addr_fanList)
+    #input('test1')
 
     #获取粉丝页的URL，每个微博账户的粉丝URL是有差别的
     url = driver.find_element_by_css_selector('div > div > div > div.follow_box > div.WB_cardpage.S_line1 > div > a.page.next.S_txt1.S_line1')
@@ -81,6 +82,7 @@ def crawlFanList(url_fanList, host, user_info, driver):
             break
 
         getFanListUrl(url, (page + 1), driver)
+        #input('test2')
 
         fans = driver.find_elements_by_css_selector("ul.follow_list>li")
 
@@ -129,6 +131,7 @@ def crawlFanList(url_fanList, host, user_info, driver):
 
             #爬取结束之后窗口切换回来并将第二个窗口关闭
             driver.close()
+            #input('test3')
             driver.switch_to_window(firstHandle)
 
             #except:

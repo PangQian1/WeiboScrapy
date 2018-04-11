@@ -10,7 +10,7 @@ import traceback
 def crawlArticle(ucid, driver):
     user_article = UserArticle.UserArticle()
 
-    for page in range(100000):
+    for page in range(2):
         page += 1
         print('UCID:' + ucid)
         print('页数:' + str(page))
@@ -39,7 +39,7 @@ def crawlArticle(ucid, driver):
         articles = driver.find_elements_by_css_selector("div.WB_feed.WB_feed_v3.WB_feed_v4 > div")
         print('文章数量：' + str(len(articles) - 3))
 
-        if len(articles) == 3:
+        if len(articles) <= 3:
             print('已经爬完该用户文章~' + ucid)
             break
 
@@ -151,4 +151,4 @@ if __name__ == "__main__":
     # for ucid in ucid_list:
     #     crawlArticle(ucid, driver)
 
-    crawlArticle('5702552653', driver)
+    crawlArticle('5359730794', driver)#5702552653

@@ -47,7 +47,7 @@ def crawlFollowerList(follower_ucid, user_follower, user_info, driver):
             driver.get(link)
         except:
             #一旦发生异常表示没有下一页，关注账户数目不足五页，退出循环
-            #print('爬取结束，粉丝数目不足五页！！')
+            print('爬取结束，粉丝数目不足五页！！')
             break
 
 

@@ -41,8 +41,8 @@ class UserFollowers(object):
 
 if __name__ == "__main__":
     a = UserFollowers()
-    b = a.searchFollowersUcid('1880883723')
-    print(b)
+    b = a.searchFollowersUcid('1821058982')
+    print(len(b))
 
 
 

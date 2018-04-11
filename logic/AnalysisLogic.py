@@ -43,7 +43,7 @@ class AnalysisLogic(BaseLogic.BaseLogic):
 
     def test(self):
         # 全模式
-        text = "我来到北京, 高兴~~ 去了清华大学"
+        text = "我来到北京,高兴~~去了清华大学"
         seg_list = jieba.cut(text, cut_all = True)
         print ("," . join(seg_list))
 
@@ -82,4 +82,5 @@ class AnalysisLogic(BaseLogic.BaseLogic):
 
 if __name__ == '__main__':
     a = AnalysisLogic()
-    a.splitArticle('1768305123')
+    #a.splitArticle('1768305123')
+    a.test()
