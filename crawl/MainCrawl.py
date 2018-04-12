@@ -30,4 +30,5 @@ if __name__ == "__main__":
     num = 0
     for ucid in ucid_list:
         ArticleCrawl.crawlArticle(ucid, driver)
-        print(++num)
+        num = num + 1
+        print(num)

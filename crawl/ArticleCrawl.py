@@ -12,8 +12,8 @@ def crawlArticle(ucid, driver):
 
     for page in range(1000000):
         page += 1
-        print('UCID:' + ucid)
-        print('页数:' + str(page))
+        #print('UCID:' + ucid)
+        #print('页数:' + str(page))
         user_home_url = 'https://weibo.com/u/' + ucid + '?is_all=1&page=' + str(page)
 
         driver.get(user_home_url)
@@ -37,10 +37,10 @@ def crawlArticle(ucid, driver):
             time.sleep(2)
 
         articles = driver.find_elements_by_css_selector("div.WB_feed.WB_feed_v3.WB_feed_v4 > div")
-        print('文章数量：' + str(len(articles) - 3))
+        #print('文章数量：' + str(len(articles) - 3))
 
         if len(articles) <= 3:
-            print('已经爬完该用户文章~' + ucid)
+            #print('已经爬完该用户文章~' + ucid)
             break
 
         for article in articles:
@@ -108,7 +108,7 @@ def dealArticles(ucid, articles, user_article):
                 pass
             content = BaseCrawl.filterEmoji(content)
 
-            print(content)
+            #print(content)
 
             # 文章的转发 点赞 评论
             article_foot = article.find_elements_by_css_selector("div.WB_handle > ul > li")
