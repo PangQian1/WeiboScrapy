@@ -10,7 +10,7 @@ import traceback
 def crawlArticle(ucid, driver):
     user_article = UserArticle.UserArticle()
 
-    for page in range(2):
+    for page in range(1000000):
         page += 1
         print('UCID:' + ucid)
         print('页数:' + str(page))

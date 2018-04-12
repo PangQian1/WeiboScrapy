@@ -11,7 +11,7 @@ class UserArticle(object):
         res = self.cursor.query(select_sql, mid)
         if res:
             # 已经存在
-            print('更新微博：' + mid)
+            #print('更新微博：' + mid)
             self.updateUserArticle(mid, (data[2], data[5], data[6], data[7]))
         else:
             # 不存在，执行插入操作
@@ -20,7 +20,7 @@ class UserArticle(object):
                   "VALUES ( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')"
 
             self.cursor.create(sql, data)
-            print('添加微博：' + data[0] + '  ' + data[1])
+            #print('添加微博：' + data[0] + '  ' + data[1])
 
     #更新微博信息
     def updateUserArticle(self, mid, data):
