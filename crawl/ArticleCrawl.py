@@ -9,7 +9,14 @@ from database import UserFollowers
 def crawlArticle(ucid, driver):
     user_article = UserArticle.UserArticle()
 
-    for page in range(1000000):
+    '''
+    #如果已经存在该用户的记录，则不再爬取他的微博
+    prc = user_article.preCheck(ucid)
+    if prc != 0:
+        return
+    '''
+
+    for page in range(3):
         page += 1
         #print('UCID:' + ucid)
         #print('页数:' + str(page))
