@@ -47,7 +47,16 @@ class UserArticle(object):
 
         self.cursor.update(sql, (content_split))
 
+    def preCheck(self, ucid):
+        sql = "select count(1) from weibo_user_article where ucid = '%s'"
+        res = self.cursor.query(sql, str(ucid))
+        return res[0]['count(1)']
+
 if __name__ == '__main__':
     user_article = UserArticle()
-    user_article.createUserArticle(("35446457", '123488666', '小盘此次烧开后发布', '3月6日', '苹果X',
-                                    '122', '4ss44', '4546'))
+    #user_article.createUserArticle(("35446457", '123488666', '小盘此次烧开后发布', '3月6日', '苹果X',
+    #                               '122', '4ss44', '4546'))
+
+    num = user_article.preCheck('2009')
+    print(num)
+    print(type(num))
