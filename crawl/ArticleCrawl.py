@@ -4,7 +4,6 @@ from crawl import LoginCrawl
 from crawl import BaseCrawl
 from database import UserArticle
 from database import UserFollowers
-import traceback
 
 # 文章爬虫
 def crawlArticle(ucid, driver):

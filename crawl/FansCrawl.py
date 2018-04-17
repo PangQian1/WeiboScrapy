@@ -1,7 +1,7 @@
 from selenium import webdriver
 from database import UserInfo
 from database import UserFollowers
-from crawl import FollowerCrawl
+from crawl import FollowerCrawl, LoginCrawl
 from crawl import BaseCrawl
 
 #进入要研究的微博粉丝列表，账户的id
@@ -47,7 +47,7 @@ def locateFanListUrl(driver):
     #input('test1')
 
     #获取粉丝页的URL，每个微博账户的粉丝URL是有差别的
-    url = driver.find_element_by_css_selector('div > div > div > div.follow_box > div.WB_cardpage.S_line1 > div > a.page.next.S_txt1.S_line1')
+    url = driver.find_element_by_css_selector('div.follow_inner > ul > li > a.S_txt1')
     url = url.get_attribute('href')
 
     #获取粉丝数量
@@ -59,42 +59,43 @@ def locateFanListUrl(driver):
     return url, fan_num
 
 #爬取粉丝列表
-def crawlFanList(url_fanList, host, user_info, driver):
+def crawlFanList(ucid, driver):
+    user_info = UserInfo.UserInfo()
     #url_fanList是一个list，第一项是粉丝列表的url，第二项是粉丝的数量
-    url = url_fanList[0]
-    num = url_fanList[1]
-    print('共有%d个粉丝' % num)
+    # url = url_fanList[0]
+    # num = url_fanList[1]
+    # print('共有%d个粉丝' % num)
+    #
+    # if num < 20:
+    #     pagination = 1
+    # else:
+    #     t = num % 20
+    #     if t == 0:
+    #         pass
+    #     else:
+    #         t = 1
+    #     pagination = int(num / 20) + t
+    #
+    # print('分为%d页' % pagination)
 
-    if num < 20:
-        pagination = 1
-    else:
-        t = num % 20
-        if t == 0:
-            pass
-        else:
-            t = 1
-        pagination = int(num / 20) + t
-
-    print('分为%d页' % pagination)
-
-    for page in range(pagination):
+    for page in range(5):
         if page == 5: #5
             break
 
-        getFanListUrl(url, (page + 1), driver)
+        # getFanListUrl(url, (page + 1), driver)
         #input('test2')
-
+        driver.get('https://weibo.com/p/' + ucid +'/follow?relate=fans&page=' + page)
         fans = driver.find_elements_by_css_selector("ul.follow_list>li")
 
-        # print('本页共有%s个粉丝' % len(fans))
+        print('本页共有%s个粉丝' % len(fans))
         for fan in fans:
 
-            ucid_str = fan.find_element_by_css_selector('div > div > div > div.follow_box > div.follow_inner > ul > li > dl > dt > a > img').get_attribute('usercard')
-            ucid = BaseCrawl.getID(ucid_str)
-            name = fan.find_element_by_css_selector('dl>dt>a').get_attribute('title')
-            sex_str = fan.get_attribute('action-data')
-            sex     = BaseCrawl.getSex(sex_str)
-            address = fan.find_element_by_css_selector('dl > dd > div.info_add > span').text
+            ucid_str  = fan.find_element_by_css_selector('div > div > div > div.follow_box > div.follow_inner > ul > li > dl > dt > a > img').get_attribute('usercard')
+            fans_ucid = BaseCrawl.getID(ucid_str)
+            name      = fan.find_element_by_css_selector('dl>dt>a').get_attribute('title')
+            sex_str   = fan.get_attribute('action-data')
+            sex       = BaseCrawl.getSex(sex_str)
+            address   = fan.find_element_by_css_selector('dl > dd > div.info_add > span').text
 
             try:
                 #可能没有简介
@@ -102,13 +103,12 @@ def crawlFanList(url_fanList, host, user_info, driver):
             except:
                 introduction = ''
 
-            data_userInfo = (ucid, name, sex, address, '', BaseCrawl.filterEmoji(introduction))
-
+            data_userInfo = (fans_ucid, name, sex, address, '', BaseCrawl.filterEmoji(introduction))
             user_info.createUserInfo(data_userInfo)
 
             #同时更新weibo_user_follower表
-            user_follower = UserFollowers.UserFollowers()
-            data_userFollower = (host, ucid)
+            user_follower     = UserFollowers.UserFollowers()
+            data_userFollower = (ucid, fans_ucid)
             user_follower.createUserFollower(data_userFollower)
 
             # 此处进入继续爬每个粉丝关注的账户
@@ -117,17 +117,17 @@ def crawlFanList(url_fanList, host, user_info, driver):
             #handleDepot = []
             #handleDepot.append(firstHandle)
             try:
-                fan.find_element_by_css_selector('dl>dd>div.info_connect>span>em>a').click()  # 打开粉丝关注账户的列表页
+                fan.find_element_by_css_selector('dl> dd > div.info_connect> span > em > a').click()  # 打开粉丝关注账户的列表页
                 handles = driver.window_handles
+
+                for handle in handles:  # 切换窗口
+                    if handle != firstHandle:
+                        driver.switch_to.window(handle)  # 切换到第二个窗口
             except:
                 pass
 
-            for handle in handles:  # 切换窗口
-                if handle != firstHandle:
-                    driver.switch_to.window(handle)  # 切换到第二个窗口
-
-            #开始爬取并放入到数据库中
-            FollowerCrawl.crawlFollowerList(ucid, user_follower, user_info, driver)
+            #开始爬取粉丝关注的人并放入到数据库中
+            FollowerCrawl.crawlFollowList(fans_ucid, driver)
 
             #爬取结束之后窗口切换回来并将第二个窗口关闭
             driver.close()
@@ -135,7 +135,7 @@ def crawlFanList(url_fanList, host, user_info, driver):
             driver.switch_to_window(firstHandle)
 
             #except:
-             #   print('exception occurred!')
+            # print('exception occurred!')
 
 '''
 https://weibo.com/1880883723/fans?refer_flag=1001030101_  山东大学
@@ -162,7 +162,9 @@ if __name__ == "__main__":
     # 使窗口最大化显示出登录界面
     driver.maximize_window()
     user_info = UserInfo.UserInfo()
+    LoginCrawl.loginWeibo('17865169752', '1835896411', driver)
 
-    ucid = searchGoalAccount(user_info, driver)
-    url_fanList = locateFanListUrl(driver)
-    crawlFanList(url_fanList, ucid, user_info, driver)
+    # ucid = searchGoalAccount(user_info, driver)
+    # url_fanList = locateFanListUrl(driver)
+                                               
+    crawlFanList('1004061223178222', driver)
