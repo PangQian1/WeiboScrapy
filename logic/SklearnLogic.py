@@ -7,6 +7,7 @@ from sklearn import feature_extraction
 from sklearn.cluster import KMeans
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
+import jieba.analyse
 
 '''
 计算词项在向量中的权重方法——TF-IDF
@@ -31,6 +32,10 @@ class SklearnLogic(BaseLogic.BaseLogic):
         通过 get_feature_names()可看到所有文本的关键字，通过 toarray() 可看到词频矩阵的结果。
         TfidfTransformer也有个 fit_transform 函数，它的作用是计算 tf-idf 值。
     '''
+
+    def __init__(self):
+        self.ucid_list = []    #用户列表
+        self.corpus    = []    #文档预料，空格连接
 
     #给定一个ucid，返回该用户发布的所有分词后的微博
     def getAllArticles(self, ucid):
@@ -59,7 +64,7 @@ class SklearnLogic(BaseLogic.BaseLogic):
         return content
 
     #生成待处理的文档，其中ucid_list为用户id列表，corpus为对应的每个用户发布的所有经过空格分割的分词后的微博
-    def generateDocument(self, ucid, ucid_list, corpus):
+    def generateDocument(self, ucid):
 
         user_followers = UserFollowers.UserFollowers()
         ucid_list_original = user_followers.searchFollowersUcid(ucid)
@@ -67,20 +72,42 @@ class SklearnLogic(BaseLogic.BaseLogic):
         for ulo in ucid_list_original:
             res = self.getAllArticles(ulo)
             if res != '':
-                ucid_list.append(ulo)
-                corpus.append(res)
+                self.ucid_list.append(ulo)
+                self.corpus.append(res)
+
+
+    def getKeyWords(self, ucid, cluster):
+
+        index = self.ucid_list.index(ucid)
+
+        #获得目标账户所属于的类别
+        goal_label = cluster[index]
+
+        #同属于目标账户的类别的所有账户的下标值
+        clu_list = []
+
+        for i in range(len(cluster)):
+            if cluster[i] == goal_label:
+                clu_list.append(i)
+
+        #目标账户所属类别的所有文档集
+        goal_text = ''
+
+        for clu in clu_list:
+            goal_text = goal_text + ' ' + self.corpus[clu]
+
+        key_words = jieba.analyse.extract_tags(goal_text, topK = 5)
+
+        return key_words
 
 
     #计算tfidf
     def calculateTFIDF(self, ucid):
 
-        ucid_list = []  # 用户列表
-        corpus = []  # 文档预料 空格连接
+        self.generateDocument(ucid)
 
-        self.generateDocument(ucid, ucid_list, corpus)
-
-        print(len(ucid_list))
-        print(len(corpus))
+        print(len(self.ucid_list))
+        print(len(self.corpus))
 
         # 将文本中的词语转换为词频矩阵 矩阵元素a[i][j] 表示j词在i类文本下的词频
         vectorizer = CountVectorizer()
@@ -89,7 +116,7 @@ class SklearnLogic(BaseLogic.BaseLogic):
         transformer = TfidfTransformer()
 
         # 第一个fit_transform是计算tf-idf 第二个fit_transform是将文本转为词频矩阵
-        tfidf = transformer.fit_transform(vectorizer.fit_transform(corpus))
+        tfidf = transformer.fit_transform(vectorizer.fit_transform(self.corpus))
 
         # 获取词袋模型中的所有词语
         word = vectorizer.get_feature_names()
@@ -135,6 +162,9 @@ class SklearnLogic(BaseLogic.BaseLogic):
 
         # 用来评估簇的个数是否合适，距离越小说明簇分的越好，选取临界点的簇个数
         print(clf.inertia_)
+
+        return clf.labels_
+
 
     def test(self):
             corpus = []  # 文档预料 空格连接
@@ -183,5 +213,8 @@ if __name__ == '__main__':
     #weight = a.getTFIDF('1768305123')
     #a.getKmeans(weight)
 
+    #首先计算tfidf矩阵，接下来直接聚类
     weight = a.calculateTFIDF('1821058982')
-    a.getKmeans(weight)
+    clf = a.getKmeans(weight)
+
+    print(a.getKeyWords('1821058982', clf))
