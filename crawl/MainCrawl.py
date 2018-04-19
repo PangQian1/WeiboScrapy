@@ -22,8 +22,6 @@ if __name__ == "__main__":
     #url_fanList = FansCrawl.locateFanListUrl(driver)
     FansCrawl.crawlFanList(goal_ucid, driver)
 
-    #input('test')
-
     # 爬取微博
     user_follower = UserFollowers.UserFollowers()
     ucid_list = user_follower.searchFollowersUcid(goal_ucid)

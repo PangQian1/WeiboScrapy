@@ -22,7 +22,7 @@ class UserFollowers(object):
 
             self.cursor.create(sql, data)
 
-    #给定目标账户的id，搜索返回其粉丝关注的所有账户的id
+    # 给定目标账户的id，搜索返回其粉丝关注的所有账户的id
     def searchFollowersUcid(self, goal_ucid):
 
         sql = "SELECT DISTINCT ucid FROM weibo_user_follower WHERE follower_ucid IN " \

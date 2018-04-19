@@ -67,4 +67,4 @@ if __name__ == "__main__":
 
     # 登录
     LoginCrawl.loginWeibo('17865169752', '1835896411', driver)
-    crawlFollowList('1223178222', user_follower, user_info, driver)
+    crawlFollowList('1223178222', driver)

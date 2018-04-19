@@ -37,27 +37,6 @@ def searchGoalAccount(user_info, driver):
 
     return ucid
 
-#定位到目标账户的粉丝列表页，并且获取粉丝数目，返回粉丝的url，返回的是一个list，可通过下标访问内容
-def locateFanListUrl(driver):
-
-    # 搜索成功后，在列表的第一项点击进入粉丝列表
-    res = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_detail > p.person_num > span:nth-child(2) > a')
-    addr_fanList = res.get_attribute('href')
-    driver.get(addr_fanList)
-    #input('test1')
-
-    #获取粉丝页的URL，每个微博账户的粉丝URL是有差别的
-    url = driver.find_element_by_css_selector('div.follow_inner > ul > li > a.S_txt1')
-    url = url.get_attribute('href')
-
-    #获取粉丝数量
-    temp = driver.find_element_by_css_selector('div > div > div > div.WB_tab_b > div > ul > li > a > span').text
-    str = temp[5:]
-    fan_num = int(str)
-    #print(fan_num)
-
-    return url, fan_num
-
 #爬取粉丝列表
 def crawlFanList(ucid, driver):
     user_info = UserInfo.UserInfo()
@@ -82,8 +61,6 @@ def crawlFanList(ucid, driver):
         if page == 5: #5
             break
 
-        # getFanListUrl(url, (page + 1), driver)
-        #input('test2')
         driver.get('https://weibo.com/p/' + ucid +'/follow?relate=fans&page=' + page)
         fans = driver.find_elements_by_css_selector("ul.follow_list>li")
 
@@ -146,6 +123,27 @@ https://weibo.com/p/1002061676317545/follow?relate=fans&page=2#Pl_Official_HisRe
 https://weibo.com/2009178141/fans?refer_flag=1001030101_  个人账户
 https://weibo.com/p/1005052009178141/follow?relate=fans&page=2#Pl_Official_HisRelation__59
 '''
+#定位到目标账户的粉丝列表页，并且获取粉丝数目，返回粉丝的url，返回的是一个list，可通过下标访问内容
+def locateFanListUrl(driver):
+
+    # 搜索成功后，在列表的第一项点击进入粉丝列表
+    res = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_detail > p.person_num > span:nth-child(2) > a')
+    addr_fanList = res.get_attribute('href')
+    driver.get(addr_fanList)
+    #input('test1')
+
+    #获取粉丝页的URL，每个微博账户的粉丝URL是有差别的
+    url = driver.find_element_by_css_selector('div.follow_inner > ul > li > a.S_txt1')
+    url = url.get_attribute('href')
+
+    #获取粉丝数量
+    temp = driver.find_element_by_css_selector('div > div > div > div.WB_tab_b > div > ul > li > a > span').text
+    str = temp[5:]
+    fan_num = int(str)
+    #print(fan_num)
+
+    return url, fan_num
+
 #对粉丝列表的URL分析确定页数
 def getFanListUrl(url, num, driver):
     #承接get_FanList方法的返回值，num是想进入的粉丝列表页数
