@@ -32,7 +32,7 @@ class UserInfo(object):
             # data = (self.ucid, self.name, self.sex, self.address, self.birthday, self.introduction)
             self.cursor.create(sql, data)
 
-    # 更新用户信息
+    # 更新部分用户信息
     def updateUserInfo(self, ucid, data):
 
         sql = "UPDATE weibo_user_info SET " \
@@ -45,15 +45,35 @@ class UserInfo(object):
 
         self.cursor.update(sql, data)
 
-    # 获取用户信息
-    def getUserInfo(self, ucids):
+    # 获取用户个人信息
+    def getUserInfoByUcid(self, ucids, fields = []):
         ucid_list = ','.join(ucids)
-        print(ucid_list);
-        sql = "SELECT * FROM weibo_user_info WHERE UCID IN (%s)"
+        print(ucid_list)
 
+        if fields :
+            fileds = ',' . join(fields)
+        else :
+            fileds = '*'
+
+        sql = "SELECT " + str(fields) + " FROM weibo_user_info WHERE UCID IN (%s)"
         res = self.cursor.query(sql, (ucid_list))
         return res
 
+    # 获取用户信息列表
+    def getUserInfoList(self, fields, offset = 0, limit = 10):
+        if len(fields):
+            fileds = ',' . join(fields)
+        else:
+            fileds = '*'
+
+        sql = "SELECT " + str(fields) + " FROM weibo_user_info LIMIT " + str(offset) + "," + str(limit)
+        res = self.cursor.query(sql, ())
+        return res
+
+    # 执行sql
+    def executeSql(self, sql, data):
+
+        self.cursor.update(sql, data)
 
 if __name__ == "__main__":
     user_info = UserInfo()
