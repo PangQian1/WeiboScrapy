@@ -4,6 +4,7 @@ from database import UserFollowers
 from crawl import FollowerCrawl, LoginCrawl
 from crawl import BaseCrawl
 
+
 #进入要研究的微博粉丝列表，账户的id
 def searchGoalAccount(user_info, driver):
     # 获取想要研究的微博名
@@ -40,31 +41,37 @@ def searchGoalAccount(user_info, driver):
 #爬取粉丝列表
 def crawlFanList(ucid, driver):
     user_info = UserInfo.UserInfo()
-    #url_fanList是一个list，第一项是粉丝列表的url，第二项是粉丝的数量
-    # url = url_fanList[0]
-    # num = url_fanList[1]
-    # print('共有%d个粉丝' % num)
-    #
-    # if num < 20:
-    #     pagination = 1
-    # else:
-    #     t = num % 20
-    #     if t == 0:
-    #         pass
-    #     else:
-    #         t = 1
-    #     pagination = int(num / 20) + t
-    #
-    # print('分为%d页' % pagination)
+    locateFanListUrl(driver)
+
+    '''
+      #url_fanList是一个list，第一项是粉丝列表的url，第二项是粉丝的数量
+    url = url_fanList[0]
+    num = url_fanList[1]
+    print('共有%d个粉丝' % num)
+
+    if num < 20:
+        pagination = 1
+    else:
+        t = num % 20
+        if t == 0:
+            pass
+        else:
+            t = 1
+        pagination = int(num / 20) + t
+
+    print('分为%d页' % pagination)
+    '''
 
     for page in range(5):
         if page == 5: #5
             break
 
-        driver.get('https://weibo.com/p/' + ucid +'/follow?relate=fans&page=' + page)
+        #getFanListUrl(url, page, driver)
+        #driver.get('https://weibo.com/p/' + str(ucid) +'/follow?relate=fans&page=' + str(page))
+
         fans = driver.find_elements_by_css_selector("ul.follow_list>li")
 
-        print('本页共有%s个粉丝' % len(fans))
+        #print('本页共有%s个粉丝' % len(fans))
         for fan in fans:
 
             ucid_str  = fan.find_element_by_css_selector('div > div > div > div.follow_box > div.follow_inner > ul > li > dl > dt > a > img').get_attribute('usercard')
@@ -114,6 +121,16 @@ def crawlFanList(ucid, driver):
             #except:
             # print('exception occurred!')
 
+        try:
+            #一页爬取完后进入到下一页，最多五页
+            p = driver.find_element_by_css_selector('div > div > div > div.follow_box > div.WB_cardpage.S_line1 > div > a.page.next.S_txt1.S_line1')
+            link = p.get_attribute('href')
+            driver.get(link)
+        except:
+            #一旦发生异常表示没有下一页，粉丝数目不足五页，退出循环
+            print('粉丝数目不足五页！！')
+            break
+
 '''
 https://weibo.com/1880883723/fans?refer_flag=1001030101_  山东大学
 https://weibo.com/p/1002061880883723/follow?relate=fans&page=1#Pl_Official_HisRelation__50
@@ -132,6 +149,7 @@ def locateFanListUrl(driver):
     driver.get(addr_fanList)
     #input('test1')
 
+    '''
     #获取粉丝页的URL，每个微博账户的粉丝URL是有差别的
     url = driver.find_element_by_css_selector('div.follow_inner > ul > li > a.S_txt1')
     url = url.get_attribute('href')
@@ -143,6 +161,7 @@ def locateFanListUrl(driver):
     #print(fan_num)
 
     return url, fan_num
+    '''
 
 #对粉丝列表的URL分析确定页数
 def getFanListUrl(url, num, driver):

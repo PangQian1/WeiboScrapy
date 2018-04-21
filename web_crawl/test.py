@@ -1,4 +1,6 @@
-
+a = "jfoga标签"
+in2 = a.index("标签")
+print(in2)
 
 
 

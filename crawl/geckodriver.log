@@ -4413,3 +4413,1127 @@ JavaScript error: chrome://browser/content/browser.js, line 6667: TypeError: can
 JavaScript error: chrome://browser/content/browser.js, line 6667: TypeError: cannot use the given object as a weak map key
 JavaScript error: chrome://browser/content/browser.js, line 6667: TypeError: cannot use the given object as a weak map key
 JavaScript error: chrome://browser/content/browser.js, line 6667: TypeError: cannot use the given object as a weak map key
+1524305934951	geckodriver	INFO	geckodriver 0.20.1
+1524305935195	geckodriver	INFO	Listening on 127.0.0.1:62065
+1524305938225	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.ODkFFx9QznvD"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524305943418	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524305952342	Marionette	INFO	Listening on port 62073
+1524305953484	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524305980470, line 139: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/moodSmallPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/moodSmallPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306018944, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306048348, line 139: unreachable code after return statement
+[Child 9500, MediaPlayback #3] WARNING: Decoder=232d451a400 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 385
+[Child 9500, MediaPlayback #3] WARNING: Decoder=232d451a400 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - class mozilla::MP4Metadata::ResultAndType<class RefPtr<class mozilla::MediaByteBuffer> > __cdecl mozilla::MP4Metadata::Metadata(class mozilla::ByteStream *): Cannot parse metadata: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3453
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306072430, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306101030, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306119100, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306129830, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306155412, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306178842, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524306203084, line 174: unreachable code after return statement
+1524307193351	geckodriver	INFO	geckodriver 0.20.1
+1524307193366	geckodriver	INFO	Listening on 127.0.0.1:64835
+1524307196430	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.ldoej8HTmLRx"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524307199122	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524307202934	Marionette	INFO	Listening on port 64843
+1524307203876	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://g.alicdn.com/kissy/k/1.4.2/seed-min.js, line 51: TypeError: i is null
+JavaScript error: https://g.alicdn.com/tb/login/0.4.7/weibo/login/login.js, line 1: TypeError: KISSY.add is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3Df6e2be692b0ffcdd87075a6c01218e7d, line 153: TypeError: S.getScript is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3Df6e2be692b0ffcdd87075a6c01218e7d, line 9: TypeError: r.ready is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3Df6e2be692b0ffcdd87075a6c01218e7d, line 5: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307220174, line 174: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/moodSmallPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/moodSmallPublish.js?version=20180420120000, line 1: unreachable code after return statement
+[Parent 9676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome[Child 9968, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/bUnable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524307317970	Marionette	INFO	Listening on port 65085
+1524307319150	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307336402, line 174: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/moodSmallPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/moodSmallPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+[Child 5432, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1524307404351	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.mmyRbYiDRZHR"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524307406506	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524307410330	Marionette	INFO	Listening on port 65323
+1524307411040	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3D1d22eb4c5c50342bf3d4dcd8e476f007, line 5: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307425642, line 174: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/moodSmallPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524307444512, line 139: unreachable code after return statement
+[Parent 6336, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4316, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1524312093356	geckodriver	INFO	geckodriver 0.20.1
+1524312093375	geckodriver	INFO	Listening on 127.0.0.1:58327
+1524312096520	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.blCY38nI5wbU"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524312101792	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524312110096	Marionette	INFO	Listening on port 58352
+1524312110576	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://g.alicdn.com/kissy/k/1.4.2/seed-min.js, line 51: TypeError: i is null
+JavaScript error: https://g.alicdn.com/tb/login/0.4.7/weibo/login/login.js, line 1: TypeError: KISSY.add is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3Db0b13f047b9a5f1d5fa216225369e4ba, line 153: TypeError: S.getScript is not a function
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312132462, line 174: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312175164, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312181678, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312197502, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312202898, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312219934, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312224870, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312240418, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524312263822, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 4436, Chrome_Chi
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1524313413312	geckodriver	INFO	geckodriver 0.20.1
+1524313413343	geckodriver	INFO	Listening on 127.0.0.1:62601
+1524313416312	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.AjAN1SEF2eAd"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524313418732	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524313423518	Marionette	INFO	Listening on port 62613
+1524313423796	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313444012, line 139: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313537004, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313544328, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313553240, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313558432, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313592772, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313605002, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524313624238, line 174: unreachable code after return statement
+[Parent 1188, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common1524314279901	mozrunner::runner
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.rzIxbB3SDL84"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524314283536	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524314288576	Marionette	INFO	Listening on port 64225
+1524314289916	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314308910, line 139: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314342472, line 174: unreachable code after return statement
+[Parent 5236, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common1524314386869	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.5lPPcu6gPQbM"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524314388798	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524314392640	Marionette	INFO	Listening on port 64639
+1524314393558	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://g.alicdn.com/kissy/k/1.4.2/seed-min.js, line 51: TypeError: i is null
+JavaScript error: https://g.alicdn.com/tb/login/0.4.7/weibo/login/login.js, line 1: TypeError: KISSY.add is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3Dc4134c1ff1ef9339e9f18d3757963e5f, line 153: TypeError: S.getScript is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3Dc4134c1ff1ef9339e9f18d3757963e5f, line 9: TypeError: r.ready is not a function
+[Parent 10692, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314410836, line 174: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directright.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/direct.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/weibo/directtop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/searchTop.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search_v6/js/pl/common/base.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/common/totalShow.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/common/bottomInput.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/feedList.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/filtertab.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/interest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js1.t.sinajs.cn/t4/apps/search_v6/js/pl/user/noResultInterest.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t4/apps/search_v6/js/pl/user/firstuser.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/dialog/forward.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t4/apps/search/js/common/bubble/moodFeedPublish.js?version=20180420120000, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314428364, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314435330, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314443296, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314448756, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314458532, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314464886, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314476210, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314507616, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314518146, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314524774, line 139: unreachable code after return statement
+[Parent 10692, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10692, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10028, Chrome_ChildThrUnable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524314909320	Marion[GPU 7592, Chrome_ChildThread] WARNIUnable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524314916752	Marionette	INFO	Listening on port 49430
+1524314917996	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314943360, line 174: unreachable code after return statement
+JavaScript error: https://strip.alicdn.com/tfscom/TB1F_nJPVXXXXbYXFXXXXXXXXXX.html?tanxdspv=https%3a%2f%2frdstat.tanx.com%2ftrd%3ff%3d%26k%3da09e279ad7f7a12a%26p%3dmm_26632537_19294801_67276517%26pvid%3d0bb4851e00035adb33434b060049d446%26s%3d186x275%26d%3d0%26t%3d1524314947&pid=mm_26632537_19294801_67276517&tp=5&tsid=0bb4851e00035adb33434b060049d446&pid=mm_26632537_19294801_67276517, line 1: TypeError: l[0][t] is undefined
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524314951378, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+[Parent 5900, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deseri[GPU 6984, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+erialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 5900, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8312, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8312, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1524315442265	geckodriver	INFO	geckodriver 0.20.1
+1524315442280	geckodriver	INFO	Listening on 127.0.0.1:51098
+1524315445364	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\pangqian\\AppData\\Local\\Temp\\rust_mozprofile.SE5BiwKlVQEj"
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524315452098	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+1524315460112	Marionette	INFO	Listening on port 51115
+1524315464388	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315499360, line 174: unreachable code after return statement
+[Parent 12076, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12076, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8700, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8700, Chrome_Ch[Child 1332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1332, Chrome_ChildThread] WARNING:[Parent 12076, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+R Path Registry from oC:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+cal\openvr\openvrpaths.vrpath
+[GFX1-]: Could not get a DXGI adapter
+[GFX1-]: Could not get a DXGI adapter
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+[GFX1-]: Could not get a DXGI adapter
+1524315635756	Marionette	INFO	Listening on port 52537
+1524315637194	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315656030, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315667072, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+[Parent 4284, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the haUnable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+[GFX1-]: Could not get a DXGI adapter
+[Child 1076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1076, Chrome_Chi1524315829240	Marionette	INFO	Listening on port 53033
+1524315829986	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+[GFX1-]: Could not get a DXGI adapter
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+[GFX1-]: Could not get a DXGI adapter
+Unable to read VR Path Registry from C:\Users\pangqian\AppData\Local\openvr\openvrpaths.vrpath
+[GFX1-]: Could not get a DXGI adapter
+JavaScript error: https://g.alicdn.com/kissy/k/1.4.2/seed-min.js, line 51: TypeError: i is null
+JavaScript error: https://g.alicdn.com/tb/login/0.4.7/weibo/login/login.js, line 1: TypeError: KISSY.add is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3D0924cb109570d8b1ae84e3da792b0156, line 153: TypeError: S.getScript is not a function
+JavaScript error: https://login.taobao.com/member/login.jhtml?from=wbfast&style=wbfast&goto=http%3A%2F%2Fweibo.com%2Fa%2Fbind%2Flogin%3Fentry%3Dtaobao%26sid%3D0924cb109570d8b1ae84e3da792b0156, line 9: TypeError: r.ready is not a function
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=1eea510ec51dafeb, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315855986, line 174: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315863156, line 139: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=e082717dab2439a5, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315870704, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315870704, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1524315870704, line 

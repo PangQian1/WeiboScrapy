@@ -7,7 +7,7 @@ class BaseCursor(object):
             host    = 'localhost',
             port    = 3306,
             user    = 'root',
-            passwd  = '960104',
+            passwd  = '',
             db      = 'graduation_design',
             charset = 'utf8',
             cursorclass = pymysql.cursors.DictCursor

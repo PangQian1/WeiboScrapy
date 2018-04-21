@@ -4,11 +4,12 @@ from database import UserFollowers
 from crawl import LoginCrawl
 from crawl import FansCrawl
 from crawl import ArticleCrawl
+from crawl import UserInfoCrawl
 
 if __name__ == "__main__":
 
     # 使用谷歌浏览器
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     driver.get('http://weibo.com/login.php')
     # 使窗口最大化显示出登录界面
     driver.maximize_window()
@@ -19,11 +20,21 @@ if __name__ == "__main__":
 
     # 爬取粉丝
     goal_ucid = FansCrawl.searchGoalAccount(user_info, driver)
-    #url_fanList = FansCrawl.locateFanListUrl(driver)
-    FansCrawl.crawlFanList(goal_ucid, driver)
+    #FansCrawl.crawlFanList(goal_ucid, driver)
+
+    #input('test')
+
+    #爬取粉丝所有的信息
+    user_follower = UserFollowers.UserFollowers()
+    fan_list = user_follower.searchFansUcid(goal_ucid)
+    for fan in fan_list:
+        UserInfoCrawl.crawlUserInfo(fan, driver)
+        input('stop')
+
+    input('test2')
+
 
     # 爬取微博
-    user_follower = UserFollowers.UserFollowers()
     ucid_list = user_follower.searchFollowersUcid(goal_ucid)
     num = 0
     for ucid in ucid_list:

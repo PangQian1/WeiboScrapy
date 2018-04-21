@@ -22,6 +22,19 @@ class UserFollowers(object):
 
             self.cursor.create(sql, data)
 
+    # 给定目标账户的id，搜索所有粉丝的id
+    def searchFansUcid(self, goal_ucid):
+
+        sql = "SELECT DISTINCT follower_ucid FROM weibo_user_follower WHERE ucid = '%s'"
+
+        # res变成了字典
+        result = self.cursor.query(sql, goal_ucid)
+        ucid_list = []
+        for value in result:
+            ucid_list.append(str(value['follower_ucid']))
+
+        return ucid_list
+
     # 给定目标账户的id，搜索返回其粉丝关注的所有账户的id
     def searchFollowersUcid(self, goal_ucid):
 
