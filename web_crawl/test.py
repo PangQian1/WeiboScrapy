@@ -1,6 +1,22 @@
-a = "jfoga标签"
-in2 = a.index("标签")
-print(in2)
+a = "jsljgoe标签"
+print(a.find("狗"))
+
+'''
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
+
+def application(env, start_response):
+    start_response('200 OK', [('Content-Type', 'welcome/html')])
+    return [b"Hello World"]
+
+'''
 
 
 
