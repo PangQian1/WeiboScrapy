@@ -96,7 +96,7 @@ class SklearnLogic(BaseLogic.BaseLogic):
         for clu in clu_list:
             goal_text = goal_text + ' ' + self.corpus[clu]
 
-        key_words = jieba.analyse.extract_tags(goal_text, topK = 5)
+        key_words = jieba.analyse.extract_tags(goal_text, topK = 20)
 
         return key_words
 
@@ -214,7 +214,7 @@ if __name__ == '__main__':
     #a.getKmeans(weight)
 
     #首先计算tfidf矩阵，接下来直接聚类
-    weight = a.calculateTFIDF('1821058982')
+    weight = a.calculateTFIDF('2009178141')
     clf = a.getKmeans(weight)
 
-    print(a.getKeyWords('1821058982', clf))
+    print(a.getKeyWords('2009178141', clf))

@@ -88,7 +88,7 @@ if __name__ == '__main__':
     input('test')
 
     user_followers = UserFollowers.UserFollowers()
-    ucid_list = user_followers.searchFollowersUcid('1821058982')
+    ucid_list = user_followers.searchFollowersUcid('2009178141')
 
     for ucid in ucid_list:
         a.splitArticle(ucid)
