@@ -10,7 +10,7 @@ import time
 if __name__ == "__main__":
 
     # 使用谷歌浏览器
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
     driver.get('http://weibo.com/login.php')
     # 使窗口最大化显示出登录界面
     driver.maximize_window()
@@ -23,24 +23,15 @@ if __name__ == "__main__":
     goal_ucid = FansCrawl.searchGoalAccount(user_info, driver)
 
     # 爬取粉丝
-    #FansCrawl.crawlFanList(goal_ucid, driver)
-
-    #input('test1')
+    # FansCrawl.crawlFanList(goal_ucid, driver)
 
     #爬取粉丝所有的信息
     user_follower = UserFollowers.UserFollowers()
-    '''
     fan_list = user_follower.searchFansUcid(goal_ucid)
     for fan in fan_list:
-
         res = 1
         while res:
             res = UserInfoCrawl.crawlUserInfo(fan, driver)
-
-
-    input('test2')
-    '''
-
 
     # 爬取微博
     ucid_list = user_follower.searchFollowersUcid(goal_ucid)

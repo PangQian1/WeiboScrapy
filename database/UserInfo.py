@@ -66,7 +66,7 @@ class UserInfo(object):
         else:
             fileds = '*'
 
-        sql = "SELECT " + str(fields) + " FROM weibo_user_info LIMIT " + str(offset) + "," + str(limit)
+        sql = "SELECT " + str(fields) + " FROM weibo_user_info ORDER BY id DESC LIMIT " + str(offset) + "," + str(limit)
         res = self.cursor.query(sql, ())
         return res
 

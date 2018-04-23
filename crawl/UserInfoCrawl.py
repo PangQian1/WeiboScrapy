@@ -6,13 +6,10 @@ from crawl import LoginCrawl
 # 爬取个人信息
 def crawlUserInfo(ucid, driver):
 
-    user_info     = UserInfo.UserInfo()
-
-    user_url = 'https://weibo.com/' + str(ucid)
+    user_info = UserInfo.UserInfo()
+    user_url  = 'https://weibo.com/' + str(ucid)
     driver.get(user_url)
-    time.sleep(3)
-
-
+    time.sleep(1)
 
     # 关注 & 粉丝 & 微博
     try:
@@ -29,17 +26,14 @@ def crawlUserInfo(ucid, driver):
     except:
         return 1
 
-
     # 获取是否是认证微博
     try:
-        driver.find_elements_by_css_selector("div.verify_area.W_tog_hover.S_line2 > p.verify.clearfix > span.icon_bed.W_fl > a")
+        driver.find_element_by_css_selector("div.verify_area.W_tog_hover.S_line2 > p.verify.clearfix")
         is_verify = 2
         #print('认证微博')
     except:
         is_verify = 1
         #print('未认证微博')
-
-
 
     # 获取个人信息详情页
     #user_info_url = driver.find_element_by_css_selector("#Pl_Core_UserInfo__6 > div > div.WB_cardwrap.S_bg2 > a.WB_cardmore.S_txt1.S_line1.clearfix").get_attribute('href')
@@ -49,7 +43,6 @@ def crawlUserInfo(ucid, driver):
         driver.get(user_info_url)
     except:
         return 1
-
 
     # 用户等级
     level = ''
@@ -62,11 +55,9 @@ def crawlUserInfo(ucid, driver):
         #print('没有级别')
         pass
 
-
     #用户生日
     birthday = ''
-
-    # 注册时间
+    # 注册时间 & 生日
     sign_up_time = ''
     try:
         info_results = driver.find_elements_by_css_selector(
@@ -81,12 +72,9 @@ def crawlUserInfo(ucid, driver):
         else:
             #print('没有注册时间')
             pass
-
     except:
         #print('没有注册时间')
         pass
-
-
 
     #用户标签
     tags = ''
@@ -111,15 +99,11 @@ def crawlUserInfo(ucid, driver):
         pass
         #print('无标签')
 
-
-
     print(birthday)
     print(level)
     print(sign_up_time)
     print(tags)
     print(is_verify)
-
-
 
     # 更新用户信息
     data_userInfo = (follow_number, follower_number, weibo_number, level, birthday, sign_up_time, is_verify, tags)
@@ -135,14 +119,11 @@ def crawlUserInfo(ucid, driver):
           "WHERE ucid = " + ucid
     user_info.executeSql(sql, data_userInfo)
 
-
-    time.sleep(3)
-
     return 0
 
 if __name__ == "__main__":
     user_info = UserInfo.UserInfo()
-    user_list = user_info.getUserInfoList(('ucid'))
+    user_list = user_info.getUserInfoList(('ucid'), 100, 20)
 
     # 使用谷歌浏览器
     driver = webdriver.Chrome()
@@ -153,13 +134,9 @@ if __name__ == "__main__":
     LoginCrawl.loginWeibo('17865169752', '1835896411', driver)
 
     time.sleep(5)
+    # res = 1
+    # while res:
+    #     res = crawlUserInfo('5317702729', driver)
 
-    res = 1
-
-    while res:
-
-        res = crawlUserInfo('3237705130', driver)
-
-
-    # for value in user_list:
-    #     crawlUserInfo(value['ucid'], driver)
+    for value in user_list:
+        crawlUserInfo(str(value['ucid']), driver)

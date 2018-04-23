@@ -1,2 +1,4 @@
 .idea/*
 venv/*
+crawl/__pycache__
+database/__pycache__
