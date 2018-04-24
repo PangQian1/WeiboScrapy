@@ -61,12 +61,11 @@ class UserInfo(object):
 
     # 获取用户信息列表
     def getUserInfoList(self, fields, offset = 0, limit = 10):
+        params = '*'
         if len(fields):
-            fileds = ',' . join(fields)
-        else:
-            fileds = '*'
+            params = ',' . join(fields)
 
-        sql = "SELECT " + str(fields) + " FROM weibo_user_info ORDER BY id DESC LIMIT " + str(offset) + "," + str(limit)
+        sql = "SELECT " + str(params) + " FROM weibo_user_info ORDER BY id DESC LIMIT " + str(offset) + "," + str(limit)
         res = self.cursor.query(sql, ())
         return res
 

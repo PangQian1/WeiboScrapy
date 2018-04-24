@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/weibo.user.province.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-$END$
+<div id="china" style="width: 1200px;height: 800px; margin:0 auto;"></div>
+
+<script type="text/javascript">
+    var chart = echarts.init(document.getElementById('china'));
+
+    s  = '123'
+
+    $.ajax({
+        type: 'get',
+        url: 'http://127.0.0.1:5000/user/province/list',
+        data: '',
+        dataType : 'json',
+        success: function (data) {
+            console.log(data['china_list']);
+
+            weibo_user_province.series[0].data = data['china_list'];
+            console.log(weibo_user_province)
+            chart.setOption(weibo_user_province);
+        },
+        error: function (data) {
+            console.log('error')
+        }
+    });
+
+
+
+</script>
 </body>
 </html>
