@@ -9,13 +9,11 @@
     <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<div id="china" style="width: 1200px;height: 800px; margin:0 auto;"></div>
+<div id="weibo_china" style="width: 1200px;height: 800px; margin:0 auto"></div>
+<div id="weibo_user_sex_verify" style="width: 1200px;height: 800px; margin:0 auto;"></div>
 
 <script type="text/javascript">
-    var chart = echarts.init(document.getElementById('china'));
-
-    s  = '123'
-
+    var chart = echarts.init(document.getElementById('weibo_china'));
     $.ajax({
         type: 'get',
         url: 'http://127.0.0.1:5000/user/province/list',
@@ -25,16 +23,31 @@
             console.log(data['china_list']);
 
             weibo_user_province.series[0].data = data['china_list'];
-            console.log(weibo_user_province)
             chart.setOption(weibo_user_province);
         },
         error: function (data) {
             console.log('error')
         }
     });
+</script>
 
+<script type="text/javascript">
+    var chart = echarts.init(document.getElementById('weibo_china'));
+    $.ajax({
+        type: 'get',
+        url: 'http://127.0.0.1:5000/user/province/list',
+        data: '',
+        dataType : 'json',
+        success: function (data) {
+            console.log(data['china_list']);
 
-
+            weibo_user_province.series[0].data = data['china_list'];
+            chart.setOption(weibo_user_province);
+        },
+        error: function (data) {
+            console.log('error')
+        }
+    });
 </script>
 </body>
 </html>
