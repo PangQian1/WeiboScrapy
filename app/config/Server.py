@@ -4,6 +4,7 @@ from flask import request, make_response
 from app.controller import UserController
 
 app = Flask(__name__)
+app.config['DEBUG']=True
 
 def render(data):
     response = make_response(json.dumps(data))

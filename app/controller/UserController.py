@@ -19,7 +19,7 @@ class UserController(object):
 
         user_list = self.user_info_cursor.getUserInfoList(('ucid', 'address'), 0, 500)
         for value in user_list:
-            print(value)
+            #print(value)
             address = value['address'].split(' ')
             if address[0] == '海外':
                 if len(address) <= 1:

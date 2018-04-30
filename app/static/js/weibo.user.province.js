@@ -1,3 +1,4 @@
+
 function randomData() {
     return Math.round(Math.random() * 1000);
 }
@@ -75,3 +76,22 @@ weibo_user_province = {
         },
     ]
 };
+
+
+var chart = echarts.init(document.getElementById('weibo_china'));
+$.ajax({
+    type: 'get',
+    url: 'http://127.0.0.1:5000/user/province/list',
+    data: '',
+    dataType : 'json',
+    success: function (data) {
+        console.log(data['china_list']);
+
+        weibo_user_province.series[0].data = data['china_list'];
+        chart.setOption(weibo_user_province);
+    },
+    error: function (data) {
+        console.log('error')
+    }
+});
+
