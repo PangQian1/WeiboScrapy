@@ -17,8 +17,7 @@ function GetUrlParam(paraName) {
             }
         }
         return '';
-    }
-    else {
+    } else {
         return '';
     }
 }

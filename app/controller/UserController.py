@@ -8,9 +8,20 @@ class UserController(object):
         self.user_info_cursor     = UserInfo.UserInfo()
         self.user_follower_cursor = UserFollowers.UserFollowers()
 
-    # 获取用户个人信息
+    """
+    获取用户个人信息
+    """
     def userInfo(self, ucid) :
         user_info = {}
+        # 如果ucid为空 就把所有人的信息取出来
+        if not ucid.strip() :
+            user_info = {
+                'name' : '管理员',
+                'introduction' : '微博爬虫爬取的全部微博用户',
+                'keywords' : '微博爬虫爬取的全部微博用户'
+            }
+            return user_info
+
         result = self.user_info_cursor.getUserInfoByUcid([ucid], ())
         if len(result) :
             user_info = result[0]
@@ -19,7 +30,9 @@ class UserController(object):
 
         return user_info
 
-    # 获取用户省份列表
+    """
+    获取用户省份列表
+    """
     def userProvinceList(self, ucid):
 
         province_list = {
@@ -30,7 +43,16 @@ class UserController(object):
         china_list   = {}
         oversea_list = {}
 
-        fans_list = self.user_follower_cursor.searchFansUcid(ucid)
+        fans_list = []
+        # 如果ucid为空 就把所有人的信息取出来
+        if not ucid.strip() :
+            result = self.user_info_cursor.getUserInfoList(['ucid'], 0, 10000)
+            for value in result :
+                fans_list.append(str(value['ucid']))
+        else :
+            fans_list = self.user_follower_cursor.searchFansUcid(ucid)
+
+        print(fans_list)
         if len(fans_list) <= 0 :
             return province_list
         user_list = self.user_info_cursor.getUserInfoByUcid(fans_list, ('ucid', 'address'))
@@ -64,14 +86,23 @@ class UserController(object):
 
         return  province_list
 
-    # 获取粉丝性别和认证的列表
+
+    '''
+    获取粉丝性别和认证的列表
+    '''
     def userSexVerifyList(self, ucid):
         sex_verify_list = {
             'sex_list'    : [],
             'verify_list' : [],
         }
-
+        ucid = str(ucid)
         fans_list = self.user_follower_cursor.searchFansUcid(ucid)
+        # 如果ucid为空 就把所有人的信息取出来
+        if not ucid.strip() :
+            result = self.user_info_cursor.getUserInfoList(['ucid'], 0, 10000)
+            for value in result :
+                fans_list.append(str(value['ucid']))
+
         if len(fans_list) <= 0 :
             return sex_verify_list
         user_sex_list = self.user_info_cursor.getUserInfoByUcid(fans_list, ('count(sex) as number' ,'sex'), 'GROUP BY sex')
@@ -100,4 +131,4 @@ class UserController(object):
 
 if __name__ == "__main__":
     a = UserController()
-    a.userInfo('2009178141')
+    a.userProvinceList('')

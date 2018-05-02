@@ -18,7 +18,7 @@ weibo_user_province = {
     },
     visualMap: {
         min: 0,
-        max: 10,
+        max: 20,
         left: 'left',
         top: 'bottom',
         text: ['高', '低'],           // 文本，默认为数值文本
@@ -60,17 +60,6 @@ weibo_user_province = {
                 {name: '安徽', value: randomData()},
                 {name: '新疆', value: randomData()},
                 {name: '浙江', value: randomData()},
-                {name: '江西', value: randomData()},
-                {name: '山西', value: randomData()},
-                {name: '内蒙古', value: randomData()},
-                {name: '吉林', value: randomData()},
-                {name: '福建', value: randomData()},
-                {name: '广东', value: randomData()},
-                {name: '西藏', value: randomData()},
-                {name: '四川', value: randomData()},
-                {name: '宁夏', value: randomData()},
-                {name: '香港', value: randomData()},
-                {name: '澳门', value: randomData()}
             ]
         },
     ]
@@ -88,7 +77,7 @@ function showChina() {
         dataType: 'json',
         success: function (data) {
             console.log(data['china_list']);
-
+            weibo_user_province.visualMap.max  = 100;
             weibo_user_province.series[0].data = data['china_list'];
             chart.setOption(weibo_user_province);
         },
