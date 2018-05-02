@@ -46,16 +46,15 @@ class UserInfo(object):
         self.cursor.update(sql, data)
 
     # 获取用户个人信息
-    def getUserInfoByUcid(self, ucids, fields = []):
+    def getUserInfoByUcid(self, ucids, fields = (), other_sql = ''):
         ucid_list = ','.join(ucids)
         print(ucid_list)
 
+        field = '*'
         if fields :
-            fileds = ',' . join(fields)
-        else :
-            fileds = '*'
+            field = ',' . join(fields)
 
-        sql = "SELECT " + str(fields) + " FROM weibo_user_info WHERE UCID IN (%s)"
+        sql = "SELECT " + str(field) + " FROM weibo_user_info WHERE UCID IN (%s)" + other_sql
         res = self.cursor.query(sql, (ucid_list))
         return res
 

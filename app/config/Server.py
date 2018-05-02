@@ -14,10 +14,19 @@ def render(data):
 
 @app.route('/user/province/list', methods=['GET', 'POST'])
 def userProvinceList():
+    ucid               = request.args.get('ucid', '')
     user_controller    = UserController.UserController()
-    user_province_list = user_controller.userProvinceList()
+    user_province_list = user_controller.userProvinceList(ucid)
 
     return render(user_province_list)
+
+@app.route('/user/sex/verify', methods=['GET', 'POST'])
+def userSexVerifyList():
+    ucid               = request.args.get('ucid', '')
+    user_controller    = UserController.UserController()
+    user_sex_verify = user_controller.userSexVerifyList(ucid)
+
+    return render(user_sex_verify)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
