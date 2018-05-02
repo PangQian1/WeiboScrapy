@@ -1,3 +1,7 @@
+var API_HOST = 'http://127.0.0.1:5000';
+var FE_HOST  = 'http://localhost:63343/';
+
+
 function GetUrlParam(paraName) {
     var url = document.location.toString();
     var arrObj = url.split("?");

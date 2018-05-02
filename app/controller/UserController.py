@@ -40,7 +40,10 @@ class UserController(object):
 
         # 遍历中国省份
         for k,v in china_list.items():
-            dic = {'name': k, 'value': v}
+            dic = {'name' : k, 'value' : v,}
+            if k == '北京' :
+                dic = {'name': k, 'value': v, 'selected' : True}
+
             province_list['china_list'].append(dic)
 
         # 遍历中国省份
@@ -50,6 +53,7 @@ class UserController(object):
 
         return  province_list
 
+    # 获取粉丝性别和认证的列表
     def userSexVerifyList(self, ucid):
         sex_verify_list = {
             'sex_list'    : [],

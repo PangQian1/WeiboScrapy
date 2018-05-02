@@ -11,11 +11,11 @@ weibo_user_sex_verify = {
     legend: {
         orient: 'vertical',
         x: 'left',
-        data: ['男', '女', '其他', '微博认证', '未认证']
+        data: ['男', '女', '微博认证', '未认证']
     },
     series: [
         {
-            name: '微博认证',
+            name: '认证统计',
             type: 'pie',
             selectedMode: 'single',
             radius: [0, '30%'],
@@ -36,7 +36,7 @@ weibo_user_sex_verify = {
             ]
         },
         {
-            name: '性别',
+            name: '性别统计',
             type: 'pie',
             radius: ['40%', '55%'],
             label: {
@@ -89,7 +89,7 @@ $("#bt_weibo_user_sex_verify").click(
         var ucid = GetUrlParam('ucid');
         $.ajax({
             type: 'get',
-            url: 'http://127.0.0.1:5000/user/sex/verify?ucid=' + ucid,
+            url: API_HOST + '/user/sex/verify?ucid=' + ucid,
             data: '',
             dataType: 'json',
             success: function (data) {
