@@ -12,7 +12,17 @@ def render(data):
 
     return response
 
-@app.route('/user/province/list', methods=['GET', 'POST'])
+# 用户个人信息
+@app.route('/api/user/info', methods=['GET', 'POST'])
+def userInfo():
+    ucid               = request.args.get('ucid', '')
+    user_controller    = UserController.UserController()
+    user_info = user_controller.userInfo(ucid)
+
+    return render(user_info)
+
+# 用户省份信息
+@app.route('/api/user/province', methods=['GET', 'POST'])
 def userProvinceList():
     ucid               = request.args.get('ucid', '')
     user_controller    = UserController.UserController()
@@ -20,7 +30,8 @@ def userProvinceList():
 
     return render(user_province_list)
 
-@app.route('/user/sex/verify', methods=['GET', 'POST'])
+# 用户性别信息
+@app.route('/api/user/sex_verify', methods=['GET', 'POST'])
 def userSexVerifyList():
     ucid               = request.args.get('ucid', '')
     user_controller    = UserController.UserController()

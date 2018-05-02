@@ -83,7 +83,7 @@ function showChina() {
     var ucid = GetUrlParam('ucid');
     $.ajax({
         type: 'get',
-        url: 'http://127.0.0.1:5000/user/province/list?ucid=' + ucid,
+        url: API_HOST + '/api/user/province?ucid=' + ucid,
         data: '',
         dataType: 'json',
         success: function (data) {

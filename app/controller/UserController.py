@@ -8,6 +8,17 @@ class UserController(object):
         self.user_info_cursor     = UserInfo.UserInfo()
         self.user_follower_cursor = UserFollowers.UserFollowers()
 
+    # 获取用户个人信息
+    def userInfo(self, ucid) :
+        user_info = {}
+        result = self.user_info_cursor.getUserInfoByUcid([ucid], ())
+        if len(result) :
+            user_info = result[0]
+            del user_info['ctime']
+            del user_info['mtime']
+
+        return user_info
+
     # 获取用户省份列表
     def userProvinceList(self, ucid):
 
@@ -89,5 +100,4 @@ class UserController(object):
 
 if __name__ == "__main__":
     a = UserController()
-
-    a.userSexVerifyList('2009178141')
+    a.userInfo('2009178141')

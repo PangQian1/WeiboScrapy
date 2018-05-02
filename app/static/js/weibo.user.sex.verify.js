@@ -89,7 +89,7 @@ $("#bt_weibo_user_sex_verify").click(
         var ucid = GetUrlParam('ucid');
         $.ajax({
             type: 'get',
-            url: API_HOST + '/user/sex/verify?ucid=' + ucid,
+            url: API_HOST + '/api/user/sex_verify?ucid=' + ucid,
             data: '',
             dataType: 'json',
             success: function (data) {

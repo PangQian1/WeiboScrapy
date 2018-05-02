@@ -123,7 +123,7 @@ def crawlUserInfo(ucid, driver):
 
 if __name__ == "__main__":
     user_info = UserInfo.UserInfo()
-    user_list = user_info.getUserInfoList(('ucid'), 100, 20)
+    user_list = user_info.getUserInfoList(['ucid'], 100, 20)
 
     # 使用谷歌浏览器
     driver = webdriver.Chrome()
@@ -134,9 +134,7 @@ if __name__ == "__main__":
     LoginCrawl.loginWeibo('17865169752', '1835896411', driver)
 
     time.sleep(5)
-    # res = 1
-    # while res:
-    #     res = crawlUserInfo('5317702729', driver)
+    res = crawlUserInfo('2009178141', driver)
 
-    for value in user_list:
-        crawlUserInfo(str(value['ucid']), driver)
+    # for value in user_list:
+    #     crawlUserInfo(str(value['ucid']), driver)
