@@ -19,7 +19,6 @@
 }
 
 #weibo_button_list {
-    background-color: antiquewhite;
     position:relative;
     top: 60px;
     margin: 0 auto;
@@ -47,13 +46,19 @@
 
 #weibo_user_china {
     position:relative;
-    top: 120px;
     width: 1200px;
     height: 800px;
     margin:0 auto
 }
 
 #weibo_user_sex_verify {
+    position:relative;
+    width: 1200px;
+    height: 800px;
+    margin:0 auto
+}
+
+.user_info {
     position:relative;
     top: 120px;
     width: 1200px;

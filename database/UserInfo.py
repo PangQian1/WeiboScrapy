@@ -55,6 +55,7 @@ class UserInfo(object):
             field = ',' . join(fields)
 
         sql = "SELECT " + str(field) + " FROM weibo_user_info WHERE UCID IN (%s)" + other_sql
+        print(sql)
         res = self.cursor.query(sql, (ucid_list))
         return res
 

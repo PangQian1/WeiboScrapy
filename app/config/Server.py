@@ -39,6 +39,15 @@ def userSexVerifyList():
 
     return render(user_sex_verify)
 
+# 用户注册时间
+@app.route('/api/user/signup_time', methods=['GET', 'POST'])
+def userSignupList():
+    ucid               = request.args.get('ucid', '')
+    user_controller    = UserController.UserController()
+    user_up_time = user_controller.userSignupList(ucid)
+
+    return render(user_up_time)
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     return '<h1>Home</h1>'

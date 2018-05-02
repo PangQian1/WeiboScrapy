@@ -34,7 +34,6 @@ class UserController(object):
     获取用户省份列表
     """
     def userProvinceList(self, ucid):
-
         province_list = {
             'china_list'  : [],
             'oversea_list': [],
@@ -86,7 +85,6 @@ class UserController(object):
 
         return  province_list
 
-
     '''
     获取粉丝性别和认证的列表
     '''
@@ -126,9 +124,57 @@ class UserController(object):
                 dic = {'name' : '其他', 'value' : value['number'], }
 
             sex_verify_list['verify_list'].append(dic)
-        print(sex_verify_list)
+
         return sex_verify_list
+
+    """
+    获取用户注册时间
+    """
+    def userSignupList(self, ucid):
+        user_signup_list = {
+            'signup_list' : [],
+            'percent_list' : [],
+        }
+
+        ucid = str(ucid)
+        fans_list = self.user_follower_cursor.searchFansUcid(ucid)
+        # 如果ucid为空 就把所有人的信息取出来
+        if not ucid.strip() :
+            result = self.user_info_cursor.getUserInfoList(['ucid'], 0, 10000)
+            for value in result :
+                fans_list.append(str(value['ucid']))
+
+        if len(fans_list) <= 0 :
+            return user_signup_list
+
+        total_number = 0
+        sub_sql = 'substr(sign_up_time, 1, 4)'
+        result  = self.user_info_cursor.getUserInfoByUcid(fans_list, ( 'count(' + sub_sql +') as number', sub_sql + ' as sign_up_time' ), ' GROUP BY ' + sub_sql)
+        # 注册时间人数 按照年份统计
+        for value in result:
+
+            if value['sign_up_time'].strip() :
+                print(value['number'])
+                total_number += int(value['number'])
+                dic = value['number']
+            else :
+                continue
+
+            user_signup_list['signup_list'].append(dic)
+
+        # 注册时间百分比 按照年份统计
+        for value in result :
+            if value['sign_up_time'].strip() :
+                percent = round((int(value['number']) / total_number) * 100, 1)
+                dic = percent
+            else :
+                continue
+
+            user_signup_list['percent_list'].append(dic)
+
+        print(user_signup_list)
+        return user_signup_list
 
 if __name__ == "__main__":
     a = UserController()
-    a.userProvinceList('')
+    a.userSignupList('')
