@@ -20,7 +20,7 @@ weibo_user_province = {
         min: 0,
         max: 20,
         left: 'left',
-        top: 'bottom',
+        top: 'center',
         text: ['高', '低'],           // 文本，默认为数值文本
         inRange: {
             color: ['#e0ffff', '#006edd']
@@ -76,8 +76,14 @@ function showChina() {
         data: '',
         dataType: 'json',
         success: function (data) {
-            console.log(data['china_list']);
-            weibo_user_province.visualMap.max  = 100;
+            var max_user_number = 0;
+            var china_list = data['china_list'];
+            for (var key in china_list) {
+                if (china_list[key].value > max_user_number) {
+                    max_user_number = china_list[key].value;
+                }
+            }
+            weibo_user_province.visualMap.max  = max_user_number;
             weibo_user_province.series[0].data = data['china_list'];
             chart.setOption(weibo_user_province);
         },

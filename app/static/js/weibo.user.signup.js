@@ -24,7 +24,8 @@ weibo_user_signup = {
     },
     legend: {
         data:['注册人数','百分比'],
-        x: 'left'
+        x: 'left',
+        orient: 'horizontal'
     },
     xAxis: [
         {
@@ -61,7 +62,7 @@ weibo_user_signup = {
         {
             name:'注册人数',
             type:'bar',
-            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8,]
+            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8]
         },
         {
             name:'百分比',
