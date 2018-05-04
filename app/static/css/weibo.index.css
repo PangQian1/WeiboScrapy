@@ -1,0 +1,85 @@
+#title {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    font-size: 30px;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#search {
+    position: relative;
+    top: 120px;
+    margin: auto;
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 1px;
+}
+
+#search_key {
+    float: left;
+    display: block;
+    width: 87%;
+    height: 97%;
+    font-size: 18px;
+    border: 0;
+}
+#search_btn {
+    border: 0;
+    height: 100%;
+    width: 12%;
+    line-height: 100%;
+}
+#result {
+    width: 40%;
+    height: 800px;
+    margin: 140px auto 0;
+    text-align: center;
+}
+.user_list {
+    position: relative;
+    clear: both;
+    margin-top: 20px;
+}
+.user_cell {
+    width: 95%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 1px;
+}
+.user_cell_title {
+    position: relative;
+    float: left;
+}
+.user_cell_content {
+    clear:both;
+    text-align: left;
+    margin-top: -10px
+}
+.user_cell.li {
+    list-style : none; /* 将默认的列表符号去掉 */
+    padding:0; /* 将默认的内边距去掉 */
+    margin:0; /* 将默认的外边距去掉 */
+}
+
+.box_username {
+    text-decoration:underline;
+    float: left;
+}
+.box_sex {
+    float: left;
+    text-decoration:underline;
+    margin-left: 10px;
+}
+.box_introduction {
+    clear:both;
+    float: left;
+    margin-top: 5px;
+}

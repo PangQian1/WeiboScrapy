@@ -69,10 +69,14 @@ class UserInfo(object):
         res = self.cursor.query(sql, ())
         return res
 
-    # 执行sql
-    def executeSql(self, sql, data):
-
+    # 执行update sql
+    def executeUpdateSql(self, sql, data):
         self.cursor.update(sql, data)
+
+    # 执行select sql
+    def executeSelectSql(self, sql, data = ()) :
+        return self.cursor.query(sql, data)
+
 
 if __name__ == "__main__":
     user_info = UserInfo()

@@ -1,3 +1,4 @@
+import random
 from database import UserInfo
 from database import UserFollowers
 from app.library import Util
@@ -51,12 +52,10 @@ class UserController(object):
         else :
             fans_list = self.user_follower_cursor.searchFansUcid(ucid)
 
-        print(fans_list)
         if len(fans_list) <= 0 :
             return province_list
         user_list = self.user_info_cursor.getUserInfoByUcid(fans_list, ('ucid', 'address'))
         for value in user_list:
-            #print(value)
             address = value['address'].split(' ')
             if address[0] == '海外':
                 if len(address) <= 1:
@@ -154,7 +153,6 @@ class UserController(object):
         for value in result:
 
             if value['sign_up_time'].strip() :
-                print(value['number'])
                 total_number += int(value['number'])
                 dic = value['number']
             else :
@@ -172,9 +170,38 @@ class UserController(object):
 
             user_signup_list['percent_list'].append(dic)
 
-        print(user_signup_list)
         return user_signup_list
+
+    """
+    搜索用户信息
+    """
+    def userSearchList(self, username):
+        user_list = {
+            'search_list'  : [],
+            'commend_list' : [],
+        }
+        # 搜索结果
+        if username.strip() :
+            sql = "select * from weibo_user_info where name like '%s'"
+            result = self.user_info_cursor.executeSelectSql(sql, ('%' + username +'%'))
+            for value in result :
+                del value['ctime']
+                del value['mtime']
+                user_list['search_list'].append(value)
+
+        # 推荐用户
+        offset = random.randint(0, 20)
+        size = 3
+        sql = "select * from weibo_user_info ORDER BY follower_number DESC LIMIT %s,%s "
+        result = self.user_info_cursor.executeSelectSql(sql, (offset, size))
+        for value in result :
+            del value['ctime']
+            del value['mtime']
+            user_list['commend_list'].append(value)
+
+        print(user_list)
+        return user_list
 
 if __name__ == "__main__":
     a = UserController()
-    a.userSignupList('')
+    a.userSearchList('胡歌')

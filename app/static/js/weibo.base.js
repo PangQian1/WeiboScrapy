@@ -1,5 +1,7 @@
 var API_HOST = 'http://127.0.0.1:5000';
-var FE_HOST  = 'http://localhost:63343/';
+var FE_HOST  = 'http://localhost:63343';
+var USER_INDEX_URL = FE_HOST + '/WeiboScrapy/app/static/index.html';
+var USER_MAIN_URL  = FE_HOST + '/WeiboScrapy/app/static/main.html';
 
 function GetUrlParam(paraName) {
     var url = document.location.toString();
@@ -21,26 +23,3 @@ function GetUrlParam(paraName) {
         return '';
     }
 }
-
-/**
- * 获取用户的个人信息
- */
-function getUserInfo() {
-    ucid = GetUrlParam('ucid');
-
-    $.ajax({
-        type: 'get',
-        url: API_HOST + '/api/user/info?ucid=' + ucid,
-        data: '',
-        dataType: 'json',
-        success: function (data) {
-            user_info = data;
-            $("#title").text(user_info['name']);
-            $("#keyword").text(user_info['introduction']);
-        },
-        error: function (data) {
-            console.log('error')
-        }
-    });
-}
-getUserInfo();

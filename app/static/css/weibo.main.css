@@ -46,6 +46,8 @@
 
 #weibo_user_china {
     position:relative;
+    width: 80%;
+    height: 800px;
     margin:0 auto
 }
 

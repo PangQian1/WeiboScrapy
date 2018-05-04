@@ -2,15 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="js/echarts.min.js"></script>
-    <script src="js/china.js"></script>
+    <title>微博爬虫搜索</title>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/weibo.index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css"/>
 </head>
 <body>
-    <div id="weibo_china" style="width: 1200px;height: 800px; margin:0 auto"></div>
-    <div id="weibo_user_sex_verify" style="width: 1200px;height: 800px; margin:0 auto;"></div>
+<div id="title">微博爬虫搜索</div>
+<div id="search">
+    <input id="search_key" type="text" name="keyword" placeholder="试着搜索一下">
+    <button id="search_btn">
+        <i class="fas fa-paper-plane fa-2x"></i>
+    </button>
+</div>
 
-    <script src="js/weibo.user.province.js"></script>
+<div id="result">
+    <div id="search_list">
+        <h3 id="search_user_list_title" style="float: left;">搜索列表:</h3>
+        <div id="search_user_list" class="user_list">
+            <div class="user_cell">
+                <h3 class="user_cell_title">
+                    <a href="" class="">赵帅 男 1999年 →</a>
+                </h3>
+                <div class="user_cell_content">
+                    自定义地址、分类、页面、博客内容 以及 自定义的布局设计 都是系统中的一等公民。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="commend_list" style="margin-top: 10px">
+        <h3 id="commend_list_title"  style="float: left;">推荐列表:</h3>
+        <div id="commend_user_list" class="user_list">
+        </div>
+    </div>
+
+    <script src="js/weibo.base.js"></script>
+    <script src="js/weibo.index.js"></script>
+</div>
 </body>
 </html>

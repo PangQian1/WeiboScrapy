@@ -48,6 +48,15 @@ def userSignupList():
 
     return render(user_up_time)
 
+# 搜索用户
+@app.route('/api/search/user', methods=['GET', 'POST'])
+def userSearchList():
+    user_name       = request.args.get('username', '')
+    user_controller = UserController.UserController()
+    user_list = user_controller.userSearchList(user_name)
+
+    return render(user_list)
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     return '<h1>Home</h1>'

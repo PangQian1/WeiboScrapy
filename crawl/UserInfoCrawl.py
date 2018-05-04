@@ -117,7 +117,7 @@ def crawlUserInfo(ucid, driver):
           "is_verify = '%s', " \
           "tags = '%s'" \
           "WHERE ucid = " + ucid
-    user_info.executeSql(sql, data_userInfo)
+    user_info.executeUpdateSql(sql, data_userInfo)
 
     return 0
 
