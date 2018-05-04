@@ -42,12 +42,12 @@
     text-align: center;
 }
 .user_list {
+    width: 100%;
     position: relative;
     clear: both;
     margin-top: 20px;
 }
 .user_cell {
-    width: 95%;
     height: 100px;
     margin-top: 20px;
     padding: 10px;
