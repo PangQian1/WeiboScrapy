@@ -1,3 +1,4 @@
+//绑定回车事件
 $('#search_key').bind('keyup', function(event) {
 　　if (event.keyCode == "13") {
 　　　　 searchUser();
@@ -11,6 +12,7 @@ $("#search_btn").click(
 )
 searchUser();
 
+//搜索用户
 function searchUser() {
     var username = $("#search_key").val();
     console.log(username);
@@ -44,7 +46,7 @@ function searchUser() {
     });
 }
 
-
+// 获取单个用户样式
 function getUserCell(user_info) {
     var user_title = user_info.name + " " + getSex(user_info.sex) + " →";
     var user_main_url = USER_MAIN_URL + '?ucid=' + user_info.ucid;
@@ -58,11 +60,11 @@ function getUserCell(user_info) {
     return user_cell;
 }
 
+// 性别处理
 function getSex(sex) {
     var result = '女';
     if (sex == 'm')
         result = '男';
-
     return result;
 }
 

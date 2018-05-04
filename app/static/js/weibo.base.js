@@ -3,6 +3,7 @@ var FE_HOST  = 'http://localhost:63343';
 var USER_INDEX_URL = FE_HOST + '/WeiboScrapy/app/static/index.html';
 var USER_MAIN_URL  = FE_HOST + '/WeiboScrapy/app/static/main.html';
 
+// 获取url参数中的某个key的值
 function GetUrlParam(paraName) {
     var url = document.location.toString();
     var arrObj = url.split("?");
