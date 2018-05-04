@@ -1,3 +1,9 @@
+$('#search_key').bind('keyup', function(event) {
+　　if (event.keyCode == "13") {
+　　　　 searchUser();
+　　}
+});
+
 $("#search_btn").click(
     function () {
         searchUser();
