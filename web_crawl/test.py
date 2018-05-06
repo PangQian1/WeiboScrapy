@@ -1,5 +1,13 @@
-a = "jsljgoe标签"
-print(a.find("狗"))
+from logic import SklearnLogic
+
+a = SklearnLogic.SklearnLogic()
+
+aaaa = [' fewa', '网页', '链接', '你们', '2018', '微博', '哈哈哈', '视频', '##', '...', '喜欢']
+str = '...'
+
+print(a.dealKeyWords(aaaa))
+
+
 
 '''
 from flask import Flask

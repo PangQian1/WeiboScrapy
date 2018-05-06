@@ -1,6 +1,7 @@
 import time
 import codecs
 from logic import BaseLogic
+from database import UserInfo
 from database import UserArticle
 from database import UserFollowers
 from sklearn import feature_extraction
@@ -96,9 +97,45 @@ class SklearnLogic(BaseLogic.BaseLogic):
         for clu in clu_list:
             goal_text = goal_text + ' ' + self.corpus[clu]
 
-        key_words = jieba.analyse.extract_tags(goal_text, topK = 20)
+        key_words = jieba.analyse.extract_tags(goal_text, topK = 50)
+
+        key_words = self.dealKeyWords(key_words)
+
+        str = ''
+        for value in key_words:
+            str = str + value + ','
+        str = str[ : (len(str)-1)]
+
+        #存入数据库
+        user_info = UserInfo.UserInfo()
+        sql = "update weibo_user_info set keywords = '%s' where ucid = '%s'"
+        user_info.executeUpdateSql(sql, (str, ucid))
 
         return key_words
+
+    #处理掉一些没有意义的常用词，比如网页，链接等
+    def dealKeyWords(self, keyWords):
+
+        #首先自定义一个字典
+        dic = ['网页', '链接', '你们', '2018', '微博', '哈哈哈', '视频', '##', '...',
+               '喜欢', '今天', '哈哈哈哈', '自己', '大家']
+        deal_index = []
+        index = 0
+
+        for value in keyWords:
+
+            if value in dic:
+                deal_index.append(index)
+
+            index = index + 1
+
+        dealing = len(deal_index) - 1
+        for i in range(len(deal_index)):
+            del (keyWords[deal_index[dealing]])
+            dealing = dealing - 1
+
+        return keyWords[ :20]
+
 
 
     #计算tfidf
@@ -217,4 +254,6 @@ if __name__ == '__main__':
     weight = a.calculateTFIDF('2009178141')
     clf = a.getKmeans(weight)
 
-    print(a.getKeyWords('2009178141', clf))
+    result = a.getKeyWords('2009178141', clf)
+    print(type(result))
+    print(result)
