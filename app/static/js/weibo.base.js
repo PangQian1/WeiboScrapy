@@ -24,3 +24,21 @@ function GetUrlParam(paraName) {
         return '';
     }
 }
+
+// 性别处理
+function getSex(sex) {
+    var result = '女';
+    if (sex == 'm')
+        result = '男';
+    return result;
+}
+
+// 是否是微博认证
+function getVerify(verify) {
+    var result = "未认证";
+    if (verify == '2') {
+        result = '微博认证(V)';
+    }
+    return result;
+}
+

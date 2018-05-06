@@ -19,7 +19,12 @@ class UserController(object):
             user_info = {
                 'name' : '管理员',
                 'introduction' : '微博爬虫爬取的全部微博用户',
-                'keywords' : '微博爬虫爬取的全部微博用户'
+                'keywords' : '微博爬虫爬取的全部微博用户',
+                'sex' : 'f',
+                'is_verify' : 2,
+                'follow_number' : '9999',
+                'follower_number' : '9999',
+                'weibo_number' : '9999',
             }
             return user_info
 

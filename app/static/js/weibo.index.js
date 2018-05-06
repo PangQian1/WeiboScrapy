@@ -59,12 +59,3 @@ function getUserCell(user_info) {
 
     return user_cell;
 }
-
-// 性别处理
-function getSex(sex) {
-    var result = '女';
-    if (sex == 'm')
-        result = '男';
-    return result;
-}
-
