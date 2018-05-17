@@ -1,7 +1,7 @@
 var API_HOST = 'http://127.0.0.1:5000';
-var FE_HOST  = 'http://localhost:63343';
-var USER_INDEX_URL = FE_HOST + '/WeiboScrapy/app/static/index.html';
-var USER_MAIN_URL  = FE_HOST + '/WeiboScrapy/app/static/main.html';
+var FE_HOST  = 'http://localhost:63342';
+var USER_INDEX_URL = FE_HOST + '/WeiboDataAnalysis/app/static/index.html';
+var USER_MAIN_URL  = FE_HOST + '/WeiboDataAnalysis/app/static/main.html';
 
 // 获取url参数中的某个key的值
 function GetUrlParam(paraName) {

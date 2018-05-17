@@ -7,14 +7,43 @@ from crawl import BaseCrawl
 
 #进入要研究的微博粉丝列表，账户的id
 def searchGoalAccount(user_info, driver):
-    # 获取想要研究的微博名
-    goal_weibo = input('Please input the the weiboName that you want to search:')
 
-    # 在输入框中输入搜索内容并进行搜索
-    driver.find_element_by_css_selector('#plc_top > div > div > div.gn_search_v2 > input').send_keys(goal_weibo)
-    driver.find_element_by_css_selector('#plc_top > div > div > div.gn_search_v2 > a').click()
-    driver.find_element_by_css_selector('#pl_common_searchTop > div.search_topic > div > ul > li:nth-child(2) > a').click()
-    #driver.find_element_by_css_selector('#pl_common_searchTop > div.search_head.clearfix > div.search_head_formbox > div.search_input > div > div.searchBtn_box > div > a').click()
+    while(True):
+
+        # 获取想要研究的微博名
+        goal_weibo = input('Please input the the weiboName that you want to search:')
+
+        # 在输入框中输入搜索内容并进行搜索
+        driver.find_element_by_css_selector('#plc_top > div > div > div.gn_search_v2 > input').send_keys(goal_weibo)
+        driver.find_element_by_css_selector('#plc_top > div > div > div.gn_search_v2 > a').click()
+        driver.find_element_by_css_selector('#pl_common_searchTop > div.search_topic > div > ul > li:nth-child(2) > a').click()
+        #driver.find_element_by_css_selector('#pl_common_searchTop > div.search_head.clearfix > div.search_head_formbox > div.search_input > div > div.searchBtn_box > div > a').click()
+
+
+        #找到后，由用户确认搜索是否正确
+        name = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_detail > p.person_name > a.W_texta.W_fb > em').text
+        print('Based on your input search result is:' + name)
+
+        confirm_str = 'Please confirm that the name is completely correct(Y/N):'
+        verify_tag = input(confirm_str)
+        #print(verify_tag)
+
+        while (True):
+
+            #判断用户输入结果
+            if (verify_tag == 'Y' or verify_tag == 'y' or verify_tag == 'N' or verify_tag == 'n'):
+                #print(1)
+                break
+            else:
+                verify_tag = input('Please enter as required：')
+
+        # 判断用户输入结果
+        if (verify_tag == 'Y' or verify_tag == 'y'):
+            #print(2)
+            break
+        else:
+            continue
+
 
     #找到后，获取账号的ucid
     ucid_str = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_pic > a > img').get_attribute('usercard')

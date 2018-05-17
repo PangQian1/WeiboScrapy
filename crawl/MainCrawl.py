@@ -26,11 +26,11 @@ if __name__ == "__main__":
     #获取目标用户id
     goal_ucid = FansCrawl.searchGoalAccount(user_info, driver)
 
-    '''
+
     # 爬取粉丝
     FansCrawl.crawlFanList(goal_ucid, driver)
 
-
+    '''
     #爬取粉丝所有的信息
     fan_list = user_follower.searchFansUcid(goal_ucid)
     for fan in fan_list:
