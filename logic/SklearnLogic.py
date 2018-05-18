@@ -182,7 +182,7 @@ class SklearnLogic(BaseLogic.BaseLogic):
     # K-means聚类
     def getKmeans(self, weight):
         print('Start Kmeans:')
-        clf = KMeans(n_clusters = 5)
+        clf = KMeans(n_clusters = 11)
         s   = clf.fit(weight)
         print(s)
 

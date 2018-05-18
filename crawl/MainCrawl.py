@@ -26,12 +26,12 @@ if __name__ == "__main__":
     #获取目标用户id
     goal_ucid = FansCrawl.searchGoalAccount(user_info, driver)
 
-
+    '''
     # 爬取粉丝
     FansCrawl.crawlFanList(goal_ucid, driver)
 
-    '''
     #爬取粉丝所有的信息
+    print('Start crawling all fans\' information...')
     fan_list = user_follower.searchFansUcid(goal_ucid)
     for fan in fan_list:
         res = 1
@@ -40,13 +40,18 @@ if __name__ == "__main__":
 
 
     # 爬取微博
+    print('Start crawling Follow Weibo’s Weibo posting')
     ucid_list = user_follower.searchFollowersUcid(goal_ucid)
     num = 0
     for ucid in ucid_list:
         ArticleCrawl.crawlArticle(ucid, driver)
         num = num + 1
         print(num)
-    
+    '''
+
+    print('Data is crawled!!')
+    print('\n**************************************************************************************************************\n')
+    print('Start data analysis...')
 
 
     # 微博分词
@@ -56,7 +61,7 @@ if __name__ == "__main__":
 
     for ucid in ucid_list:
         spilt_article.splitArticle(ucid)
-    '''
+
 
     # 获取分析结果
     sklearn_logic = SklearnLogic.SklearnLogic()
@@ -67,3 +72,6 @@ if __name__ == "__main__":
 
     result = sklearn_logic.getKeyWords(goal_ucid, clf)
     print(result)
+
+
+    print('\n\nEnd of information processing~~~~')

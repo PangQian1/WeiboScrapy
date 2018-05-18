@@ -45,6 +45,8 @@ def searchGoalAccount(user_info, driver):
             continue
 
 
+    print('Web crawlers start working...This will take a long time...')
+
     #找到后，获取账号的ucid
     ucid_str = driver.find_element_by_css_selector('#pl_user_feedList > div:nth-child(1) > div > div > div > div:nth-child(1) > div.person_pic > a > img').get_attribute('usercard')
     ucid     = BaseCrawl.getID(ucid_str)
@@ -89,7 +91,11 @@ def crawlFanList(ucid, driver):
         pagination = int(num / 20) + t
 
     print('分为%d页' % pagination)
+    
     '''
+
+    #爬取进度
+    pro = 0
 
     for page in range(5):
         if page == 5: #5
@@ -147,6 +153,10 @@ def crawlFanList(ucid, driver):
             #input('test3')
             driver.switch_to_window(firstHandle)
 
+            #记录爬取进度
+            pro = pro + 1
+            print('Crawling progress %d ..' % pro)
+
             #except:
             # print('exception occurred!')
 
@@ -157,7 +167,7 @@ def crawlFanList(ucid, driver):
             driver.get(link)
         except:
             #一旦发生异常表示没有下一页，粉丝数目不足五页，退出循环
-            print('粉丝数目不足五页！！')
+            #print('粉丝数目不足五页！！')
             break
 
 '''

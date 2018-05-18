@@ -1,11 +1,10 @@
-from logic import SklearnLogic
 
-a = SklearnLogic.SklearnLogic()
 
-aaaa = [' fewa', '网页', '链接', '你们', '2018', '微博', '哈哈哈', '视频', '##', '...', '喜欢']
-str = '...'
+pro = 9
+pro = pro + 1
+print("Crawling progress %d .." % pro)
 
-print(a.dealKeyWords(aaaa))
+print('\nfogho')
 
 
 
