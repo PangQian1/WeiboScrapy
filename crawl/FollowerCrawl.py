@@ -39,7 +39,8 @@ def crawlFollowList(follower_ucid, driver):
                 user_info.createUserInfo(data_userInfo)
 
             except:
-                print('出现假账户！')
+                #print('出现假账户！')
+                pass
 
         if page == 4:#如果page为4，爬的即是第五页，第六页已经不能访问，后续不须进行，网页加载浪费时间
             break
@@ -51,7 +52,7 @@ def crawlFollowList(follower_ucid, driver):
             driver.get(link)
         except:
             #一旦发生异常表示没有下一页，关注账户数目不足五页，退出循环
-            print('爬取结束，关注数目不足五页！！')
+            #print('爬取结束，关注数目不足五页！！')
             break
 
 if __name__ == "__main__":

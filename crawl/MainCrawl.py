@@ -26,7 +26,7 @@ if __name__ == "__main__":
     #获取目标用户id
     goal_ucid = FansCrawl.searchGoalAccount(user_info, driver)
 
-    '''
+
     # 爬取粉丝
     FansCrawl.crawlFanList(goal_ucid, driver)
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         ArticleCrawl.crawlArticle(ucid, driver)
         num = num + 1
         print(num)
-    '''
+
 
     print('Data is crawled!!')
     print('\n**************************************************************************************************************\n')
