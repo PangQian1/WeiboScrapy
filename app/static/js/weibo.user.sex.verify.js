@@ -83,10 +83,12 @@ weibo_user_sex_verify = {
 
 $("#bt_weibo_user_sex_verify").click(
     function () {
+
         $(".user_info").hide();
         $("#weibo_user_sex_verify").show();
         var chart = echarts.init(document.getElementById('weibo_user_sex_verify'));
         var ucid = GetUrlParam('ucid');
+
         $.ajax({
             type: 'get',
             url: API_HOST + '/api/user/sex_verify?ucid=' + ucid,
@@ -102,5 +104,6 @@ $("#bt_weibo_user_sex_verify").click(
                 console.log('error')
             }
         });
+
     }
 );
