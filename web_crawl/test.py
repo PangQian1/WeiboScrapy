@@ -5,6 +5,9 @@ a = 3
 b = round(pro/a, 4)
 print('%.2f%%' % (b * 100))
 
+dic = {'a':1,'b':2}
+print('a' in dic)
+
 
 
 '''

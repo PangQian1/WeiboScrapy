@@ -2,6 +2,7 @@ import random
 from database import UserInfo
 from database import UserFollowers
 from app.library import Util
+import operator
 
 class UserController(object):
 
@@ -190,6 +191,8 @@ class UserController(object):
             'percentage' : []
         }
 
+        label_num = {}
+
         sql = "select tags from weibo_user_info where ucid in " \
               "(select follower_ucid from weibo_user_follower where ucid = '%s')"
 
@@ -209,26 +212,41 @@ class UserController(object):
         label_list = label_str.split(',')
 
         #print(label_list)
+        #print(type(user_label_list['label_num']))
 
         for value in label_list:
 
-            if value not in user_label_list['label']:
-                user_label_list['label'].append(value)
-                user_label_list['num'].append(1)
-                user_label_list['percentage'].append(0)
+            if value in label_num:
+                num = label_num[value] + 1
+                label_num[value] = num
+
+                #user_label_list['label'].append(value)
+                #user_label_list['num'].append(1)
+                #user_label_list['percentage'].append(0)
             else:
-                index = user_label_list['label'].index(value)
-                user_label_list['num'][index] = user_label_list['num'][index] + 1
+                label_num[value] = 1
+
+                #index = user_label_list['label'].index(value)
+                #user_label_list['num'][index] = user_label_list['num'][index] + 1
+
+
+        #对字典进行排序，按照value值
+        reverse_label = sorted(label_num.items(), key=operator.itemgetter(1))
+        #print(user_label_list['label_num'])
+
+        index = len(reverse_label) - 1
+        for i in range(len(reverse_label)):
+            user_label_list['label'].append(reverse_label[index - i][0])
+            user_label_list['num'].append(reverse_label[index - i][1])
 
         #最后处理一下百分比部分
-        for i in range(len(user_label_list['num'])):
+        for value in user_label_list['num']:
             #保留四位小数
-            data = round(user_label_list['num'][i] / total, 4)
+            data = round(value / total, 4)
 
             #转换成百分比
-            user_label_list['percentage'][i] = '%.2f%%' % (data * 100)
+            user_label_list['percentage'].append('%.2f%%' % (data * 100))
 
-        #print(total)
         #print(user_label_list)
 
         return user_label_list
