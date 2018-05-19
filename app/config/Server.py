@@ -59,9 +59,9 @@ def userLabel():
     ucid               = request.args.get('ucid', '')
     user_controller    = UserController.UserController()
 
-    #user_up_time = user_controller.userSignupList(ucid)
+    user_label = user_controller.userLabelList(ucid)
 
-    return render(1)
+    return render(user_label)
 
 
 # 搜索用户

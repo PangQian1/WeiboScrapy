@@ -13,7 +13,9 @@ class UserController(object):
     获取用户个人信息
     """
     def userInfo(self, ucid) :
+
         user_info = {}
+
         # 如果ucid为空 就把所有人的信息取出来
         if not ucid.strip() :
             user_info = {
@@ -178,6 +180,61 @@ class UserController(object):
         return user_signup_list
 
     """
+    获取用户标签信息
+    """
+    def userLabelList(self, ucid):
+
+        user_label_list = {
+            'label'      : [],
+            'num'        : [],
+            'percentage' : []
+        }
+
+        sql = "select tags from weibo_user_info where ucid in " \
+              "(select follower_ucid from weibo_user_follower where ucid = '%s')"
+
+        label_list_pri = self.user_info_cursor.executeSelectSql(sql, ucid)
+
+        label_str = ""
+        total = 0
+        for item in label_list_pri:
+
+            if item['tags'].strip():
+                label_str = label_str + "," + item['tags']
+                total = total + 1
+
+        #利用切片将最开始的逗号去掉
+        label_str = label_str[1 : ]
+
+        label_list = label_str.split(',')
+
+        #print(label_list)
+
+        for value in label_list:
+
+            if value not in user_label_list['label']:
+                user_label_list['label'].append(value)
+                user_label_list['num'].append(1)
+                user_label_list['percentage'].append(0)
+            else:
+                index = user_label_list['label'].index(value)
+                user_label_list['num'][index] = user_label_list['num'][index] + 1
+
+        #最后处理一下百分比部分
+        for i in range(len(user_label_list['num'])):
+            #保留四位小数
+            data = round(user_label_list['num'][i] / total, 4)
+
+            #转换成百分比
+            user_label_list['percentage'][i] = '%.2f%%' % (data * 100)
+
+        #print(total)
+        #print(user_label_list)
+
+        return user_label_list
+
+
+    """
     搜索用户信息
     """
     def userSearchList(self, username):
@@ -209,4 +266,6 @@ class UserController(object):
 
 if __name__ == "__main__":
     a = UserController()
-    a.userSearchList('胡歌')
+    #a.userSearchList('胡歌')
+
+    res = a.userLabelList('2009178141')

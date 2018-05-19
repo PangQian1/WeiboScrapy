@@ -1,10 +1,9 @@
 
 
-pro = 9
-pro = pro + 1
-print("Crawling progress %d .." % pro)
-
-print('\nfogho')
+pro = 8
+a = 3
+b = round(pro/a, 4)
+print('%.2f%%' % (b * 100))
 
 
 
