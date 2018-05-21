@@ -1,6 +1,5 @@
 
 function getLabel(data){
-
     var label_table_head = "<div style=\"text-align: center;\">" +
         "<div class='row'>"+
         "<div style=\"width: 70%;margin-left: 15%\" class=\"col-xs-12\">" +
@@ -41,7 +40,7 @@ function getPage(total) {
         '</li>';
     var user_label_page_tail = '<li class="paginate_button next disabled" aria-controls="dynamic-table" tabindex="0" id="dynamic-table_next">\n' +
         '<a href="#">Next</a>' +
-        '</li>'
+        '</li>';
 
     var page = 1;
     for(var i = 0; i < total; i += 10) {
@@ -50,7 +49,6 @@ function getPage(total) {
     }
 
     user_label_page_head += user_label_page_tail;
-
     return user_label_page_head;
 }
 
@@ -64,7 +62,6 @@ function showLabels(page) {
     console.log(page_size);
 
     url = API_HOST + '/api/user/label?ucid=' + ucid + '&page=' + page + '&page_size=' + page_size;
-    console.log(url);
 
     $.ajax({
         type: 'get',

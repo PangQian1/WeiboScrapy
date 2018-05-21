@@ -224,7 +224,6 @@ class UserController(object):
 
         #对字典进行排序，按照value值
         reverse_label = sorted(label_num.items(), key = operator.itemgetter(1))
-        #print(user_label_list['label_num'])
         user_label_list['total'] = len(label_num)
         index = len(reverse_label) - 1
         for i in range(len(reverse_label)):
@@ -244,7 +243,6 @@ class UserController(object):
             #转换成百分比
             user_label_list['percentage'].append('%.2f%%' % (data * 100))
 
-        #print(user_label_list)
         return user_label_list
 
     """
