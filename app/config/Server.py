@@ -56,13 +56,13 @@ def userSignupList():
 @app.route('/api/user/label', methods=['GET', 'POST'])
 def userLabel():
 
-    ucid               = request.args.get('ucid', '')
-    user_controller    = UserController.UserController()
-
-    user_label = user_controller.userLabelList(ucid)
+    ucid            = request.args.get('ucid', '')
+    page            = request.args.get('page', 1)
+    page_size       = request.args.get('page_size', 10)
+    user_controller = UserController.UserController()
+    user_label = user_controller.userLabelList(ucid, int(page), int(page_size))
 
     return render(user_label)
-
 
 # 搜索用户
 @app.route('/api/search/user', methods=['GET', 'POST'])

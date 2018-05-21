@@ -183,74 +183,69 @@ class UserController(object):
     """
     获取用户标签信息
     """
-    def userLabelList(self, ucid):
-
+    def userLabelList(self, ucid, page, page_size):
         user_label_list = {
+            'total'      : 0,
             'label'      : [],
             'num'        : [],
             'percentage' : []
         }
+        offset = (int(page) - 1) * int(page_size)
+        limit  = int(page_size)
+        print(offset)
 
         label_num = {}
-
-        sql = "select tags from weibo_user_info where ucid in " \
-              "(select follower_ucid from weibo_user_follower where ucid = '%s')"
-
-        label_list_pri = self.user_info_cursor.executeSelectSql(sql, ucid)
+        # 管理员
+        if not ucid.strip() :
+            sql = "select tags from weibo_user_info"
+            label_list_pri = self.user_info_cursor.executeSelectSql(sql)
+        else :
+            sql = "select tags from weibo_user_info where ucid in " \
+                  "(select follower_ucid from weibo_user_follower where ucid = '%s')"
+            label_list_pri = self.user_info_cursor.executeSelectSql(sql, ucid)
 
         label_str = ""
         total = 0
         for item in label_list_pri:
-
             if item['tags'].strip():
                 label_str = label_str + "," + item['tags']
                 total = total + 1
 
         #利用切片将最开始的逗号去掉
-        label_str = label_str[1 : ]
-
+        label_str  = label_str[1 : ]
         label_list = label_str.split(',')
 
-        #print(label_list)
-        #print(type(user_label_list['label_num']))
-
         for value in label_list:
-
             if value in label_num:
                 num = label_num[value] + 1
                 label_num[value] = num
-
-                #user_label_list['label'].append(value)
-                #user_label_list['num'].append(1)
-                #user_label_list['percentage'].append(0)
             else:
                 label_num[value] = 1
 
-                #index = user_label_list['label'].index(value)
-                #user_label_list['num'][index] = user_label_list['num'][index] + 1
-
-
         #对字典进行排序，按照value值
-        reverse_label = sorted(label_num.items(), key=operator.itemgetter(1))
+        reverse_label = sorted(label_num.items(), key = operator.itemgetter(1))
         #print(user_label_list['label_num'])
-
+        user_label_list['total'] = len(label_num)
         index = len(reverse_label) - 1
         for i in range(len(reverse_label)):
-            user_label_list['label'].append(reverse_label[index - i][0])
-            user_label_list['num'].append(reverse_label[index - i][1])
+            if offset > 0 :
+                offset -= 1
+                continue
+
+            if limit > 0 :
+                limit -= 1
+                user_label_list['label'].append(reverse_label[index - i][0])
+                user_label_list['num'].append(reverse_label[index - i][1])
 
         #最后处理一下百分比部分
         for value in user_label_list['num']:
             #保留四位小数
             data = round(value / total, 4)
-
             #转换成百分比
             user_label_list['percentage'].append('%.2f%%' % (data * 100))
 
         #print(user_label_list)
-
         return user_label_list
-
 
     """
     搜索用户信息

@@ -1,5 +1,5 @@
 
-function showLabel(data){
+function getLabel(data){
 
     var label_table_head = "<div style=\"text-align: center;\">" +
         "<div class='row'>"+
@@ -30,37 +30,64 @@ function showLabel(data){
         "</tr>")
     }
 
-    var label_table = label_table_head + label_table_body + label_tabel_tail;
-
-    return label_table;
+    return label_table_head + label_table_body + label_tabel_tail;
 }
 
+function getPage(total) {
+
+    var user_label_page_head = '<li class="paginate_button previous disabled" aria-controls="dynamic-table" tabindex="0"' +
+        'id="dynamic-table_previous">' +
+        '<a href="#">Previous</a>' +
+        '</li>';
+    var user_label_page_tail = '<li class="paginate_button next disabled" aria-controls="dynamic-table" tabindex="0" id="dynamic-table_next">\n' +
+        '<a href="#">Next</a>' +
+        '</li>'
+
+    var page = 1;
+    for(var i = 0; i < total; i += 10) {
+        user_label_page_head += '<li class="paginate_button" aria-controls="dynamic-table" tabindex="0" onclick="showLabels(' + (page) +')"><a href="#">' + (page) + '</a></li>';
+        page++;
+    }
+
+    user_label_page_head += user_label_page_tail;
+
+    return user_label_page_head;
+}
+
+function showLabels(page) {
+    $(".user_info").hide();
+    $("#weibo_user_label").show();
+    var ucid = GetUrlParam('ucid');
+    ucid = ucid.replace('#', '');
+    var page_size = 10;
+    console.log(page);
+    console.log(page_size);
+
+    url = API_HOST + '/api/user/label?ucid=' + ucid + '&page=' + page + '&page_size=' + page_size;
+    console.log(url);
+
+    $.ajax({
+        type: 'get',
+        url: url,
+        data: '',
+        dataType: 'json',
+        success: function (data) {
+            var label = getLabel(data);
+            $("#weibo_user_label_content").empty();
+            $("#weibo_user_label_content").append(label);
+
+            var label_page = getPage(data['total']);
+            $("#weibo_user_label_page").empty();
+            $("#weibo_user_label_page").append(label_page);
+        },
+        error: function (data) {
+            console.log('error')
+        }
+    });
+}
 
 $("#bt_weibo_user_label").click(
     function () {
-
-        $(".user_info").hide();
-        $("#weibo_user_label").show();
-        //var chart = echarts.init(document.getElementById('weibo_user_sex_verify'));
-        var ucid = GetUrlParam('ucid');
-
-        $.ajax({
-            type: 'get',
-            url: API_HOST + '/api/user/label?ucid=' + ucid,
-            data: '',
-            dataType: 'json',
-            success: function (data) {
-                console.log(data)
-                var res = showLabel(data);
-                console.log(res);
-                $("#weibo_user_label").append(res);
-            },
-            error: function (data) {
-                console.log('error')
-            }
-        });
-
-
+        showLabels(1)
     }
 );
-

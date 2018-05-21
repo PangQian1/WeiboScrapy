@@ -7,8 +7,8 @@
     <script src="js/china.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
 
-    <link rel="stylesheet" href="./css/assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/assets/css/font-awesome.css"/>
 </head>
 <body>
 <link rel="stylesheet" type="text/css" href="css/weibo.main.css"/>
@@ -31,7 +31,7 @@
         </button>
     </a>
     <button id="bt_weibo_user_china" class="weibo_button">粉丝区域分布</button>
-    <button id="bt_weibo_user_sex_verify" class="weibo_button">粉丝性别及认证</button>
+    <button id="bt_weibo_user_sex_verify" class="weibo_button">粉丝性别&认证</button>
     <button id="bt_weibo_user_signup" class="weibo_button">粉丝注册时间</button>
     <button id="bt_weibo_user_label" class="weibo_button">粉丝标签显示</button>
 </div>
@@ -39,7 +39,30 @@
 <div id="weibo_user_china" class="user_info"></div>
 <div id="weibo_user_sex_verify" class="user_info"></div>
 <div id="weibo_user_signup" class="user_info"></div>
-<div id="weibo_user_label" class="user_info"></div>
+<div id="weibo_user_label" class="user_info">
+
+    <div id="weibo_user_label_content">
+
+    </div>
+    <div style="position:relative; float: left; width: 70%; margin-left: 15%;">
+        <div class="dataTables_paginate paging_simple_numbers">
+            <ul  id="weibo_user_label_page" class="pagination" style="text-align: center; float: right; margin-right: 1%">
+                <li class="paginate_button previous disabled" aria-controls="dynamic-table" tabindex="0"
+                    id="dynamic-table_previous">
+                    <a href="#">Previous</a>
+                </li>
+
+                <li class="paginate_button" aria-controls="dynamic-table" tabindex="0" onclick="showLabels(1)"><a href="#">1</a></li>
+                <li class="paginate_button" aria-controls="dynamic-table" tabindex="0" onclick="showLabels(2)"><a href="#">2</a></li>
+                <li class="paginate_button" aria-controls="dynamic-table" tabindex="0" onclick="showLabels(3)"><a href="#">3</a></li>
+
+                <li class="paginate_button next disabled" aria-controls="dynamic-table" tabindex="0" id="dynamic-table_next">
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <script src="js/weibo.base.js"></script>
 <script src="js/weibo.main.js"></script>
