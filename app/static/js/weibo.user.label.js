@@ -1,4 +1,11 @@
 
+//总页数
+var page_count = 1;
+//当前页码
+var current_page = 1;
+//每页大小
+var page_size = 10;
+
 function getLabel(data){
     var label_table_head = "<div style=\"text-align: center;\">" +
         "<div class='row'>"+
@@ -34,30 +41,42 @@ function getLabel(data){
 
 function getPage(total) {
 
-    var user_label_page_head = '<li class="paginate_button previous disabled" aria-controls="dynamic-table" tabindex="0"' +
-        'id="dynamic-table_previous">' +
+    //前一頁
+     var user_label_page_head = '<li class="paginate_button previous" aria-controls="dynamic-table" tabindex="0"' +
+        'id="dynamic-table_previous" onclick="showLabels(' + ((current_page == 1) ? 1 : current_page - 1) +')">' +
         '<a href="#">Previous</a>' +
         '</li>';
-    var user_label_page_tail = '<li class="paginate_button next disabled" aria-controls="dynamic-table" tabindex="0" id="dynamic-table_next">\n' +
+
+     //页码初始化
+     var page = 1;
+     for(var i = 0; i < total; i += 10) {
+        user_label_page_head += '<li class="paginate_button" aria-controls="dynamic-table" tabindex="0" onclick="showLabels(' + (page) +')"><a href="#">' + (page) + '</a></li>';
+        page++;
+     }
+     page_count = page - 1;
+
+     //后一页
+     var user_label_page_tail = '<li class="paginate_button next" aria-controls="dynamic-table" tabindex="0" ' +
+        'id="dynamic-table_next" onclick="showLabels(' + ((current_page == page_count) ? page_count : current_page + 1) +')">' +
         '<a href="#">Next</a>' +
         '</li>';
 
-    var page = 1;
-    for(var i = 0; i < total; i += 10) {
-        user_label_page_head += '<li class="paginate_button" aria-controls="dynamic-table" tabindex="0" onclick="showLabels(' + (page) +')"><a href="#">' + (page) + '</a></li>';
-        page++;
-    }
+     //console.log(user_label_page_tail);
 
     user_label_page_head += user_label_page_tail;
     return user_label_page_head;
 }
 
 function showLabels(page) {
+
+    console.log('aaa' + current_page);
+    current_page = page;
+
     $(".user_info").hide();
     $("#weibo_user_label").show();
     var ucid = GetUrlParam('ucid');
     ucid = ucid.replace('#', '');
-    var page_size = 10;
+
     console.log(page);
     console.log(page_size);
 

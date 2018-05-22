@@ -195,6 +195,7 @@ class UserController(object):
         print(offset)
 
         label_num = {}
+
         # 管理员
         if not ucid.strip() :
             sql = "select tags from weibo_user_info"

@@ -141,9 +141,11 @@ def dealArticles(ucid, articles, user_article):
 
 
 if __name__ == "__main__":
+
     # 使用谷歌浏览器
     driver = webdriver.Firefox()
     driver.get('http://weibo.com/login.php')
+    
     # 使窗口最大化显示出登录界面
     driver.maximize_window()
     #LoginCrawl.loginWeibo('15901057573', 'zs123456', driver)
