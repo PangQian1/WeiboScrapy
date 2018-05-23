@@ -12,6 +12,17 @@ def render(data):
 
     return response
 
+# 用户信息填写统计
+@app.route('/api/user/statistics', methods=['GET', 'POST'])
+def userInfoStatistics():
+
+    ucid               = request.args.get('ucid', '')
+    user_controller    = UserController.UserController()
+    user_info_statistics = user_controller.userInfoStatistics(ucid)
+
+    return render(user_info_statistics)
+
+
 # 用户个人信息
 @app.route('/api/user/info', methods=['GET', 'POST'])
 def userInfo():

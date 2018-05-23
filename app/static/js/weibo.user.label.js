@@ -7,6 +7,7 @@ var current_page = 1;
 var page_size = 10;
 
 function getLabel(data){
+
     var label_table_head = "<div style=\"text-align: center;\">" +
         "<div class='row'>"+
         "<div style=\"width: 70%;margin-left: 15%\" class=\"col-xs-12\">" +

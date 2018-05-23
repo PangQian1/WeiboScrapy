@@ -39,6 +39,57 @@ class UserController(object):
 
         return user_info
 
+
+    """
+    获取用户信息填写情况统计
+    """
+    def userInfoStatistics(self, ucid):
+        user_info_statistics = {
+            'complete_num'  : [0, 0, 0, 0, 0],
+            'incomplete_num': [0, 0, 0, 0, 0],
+            'total_num'     : 0
+        }
+
+        ucid = str(ucid)
+        fans_list = self.user_follower_cursor.searchFansUcid(ucid)
+
+        # 如果ucid为空 就把所有人的信息取出来
+        if not ucid.strip():
+            result = self.user_info_cursor.getUserInfoList(['ucid'], 0, 10000)
+            for value in result:
+                fans_list.append(str(value['ucid']))
+
+        if len(fans_list) <= 0:
+            return user_info_statistics
+
+        total_number = 0
+
+        result = self.user_info_cursor.getUserInfoByUcid(fans_list)
+
+        #按照'地区','生日','标签','注册时间','简介' 顺序来
+        for value in result:
+
+            if value['address'].strip():
+                user_info_statistics['complete_num'][0] += 1
+            if value['birthday'].strip():
+                user_info_statistics['complete_num'][1] += 1
+            if value['tags'].strip():
+                user_info_statistics['complete_num'][2] += 1
+            if value['sign_up_time'].strip():
+                user_info_statistics['complete_num'][3] += 1
+            if value['introduction'].strip():
+                user_info_statistics['complete_num'][4] += 1
+
+            total_number += 1
+
+        for i in range(len(user_info_statistics['incomplete_num'])):
+            user_info_statistics['incomplete_num'][i] = total_number - user_info_statistics['complete_num'][i]
+
+        user_info_statistics['total_num'] = total_number
+
+        return user_info_statistics
+
+
     """
     获取用户省份列表
     """
@@ -52,6 +103,7 @@ class UserController(object):
         oversea_list = {}
 
         fans_list = []
+
         # 如果ucid为空 就把所有人的信息取出来
         if not ucid.strip() :
             result = self.user_info_cursor.getUserInfoList(['ucid'], 0, 10000)
@@ -102,6 +154,7 @@ class UserController(object):
         }
         ucid = str(ucid)
         fans_list = self.user_follower_cursor.searchFansUcid(ucid)
+
         # 如果ucid为空 就把所有人的信息取出来
         if not ucid.strip() :
             result = self.user_info_cursor.getUserInfoList(['ucid'], 0, 10000)
@@ -145,6 +198,7 @@ class UserController(object):
 
         ucid = str(ucid)
         fans_list = self.user_follower_cursor.searchFansUcid(ucid)
+
         # 如果ucid为空 就把所有人的信息取出来
         if not ucid.strip() :
             result = self.user_info_cursor.getUserInfoList(['ucid'], 0, 10000)
