@@ -4,7 +4,7 @@ var page_count = 1;
 //当前页码
 var current_page = 1;
 //每页大小
-var page_size = 10;
+var page_size = 20;
 
 function getLabel(data){
 
@@ -27,8 +27,7 @@ function getLabel(data){
         "</div></div>";
 
     var label_table_body = "";
-    for(var i = 0; i < data['label'].length;
-        i++){
+    for(var i = 0; i < data['label'].length; i++){
         label_table_body += (
         "<tr>" +
         "<td>" + data['label'][i] + "</td>" +
@@ -50,7 +49,8 @@ function getPage(total) {
 
      //页码初始化
      var page = 1;
-     for(var i = 0; i < total; i += 10) {
+     for(var i = 0; i < total; i += 20) {
+        console.log(total);
         user_label_page_head += '<li class="paginate_button" aria-controls="dynamic-table" tabindex="0" onclick="showLabels(' + (page) +')"><a href="#">' + (page) + '</a></li>';
         page++;
      }
@@ -70,7 +70,7 @@ function getPage(total) {
 
 function showLabels(page) {
 
-    console.log('aaa' + current_page);
+    //console.log('aaa' + current_page);
     current_page = page;
 
     $(".user_info").hide();
@@ -78,8 +78,8 @@ function showLabels(page) {
     var ucid = GetUrlParam('ucid');
     ucid = ucid.replace('#', '');
 
-    console.log(page);
-    console.log(page_size);
+    //console.log(page);
+   // console.log(page_size);
 
     url = API_HOST + '/api/user/label?ucid=' + ucid + '&page=' + page + '&page_size=' + page_size;
 

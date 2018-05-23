@@ -43,16 +43,8 @@ weibo_userInfo_statistics = {
             name:'填写人数',
             type:'bar',
             stack: '总量',
+            barWidth: 50,
             itemStyle : { normal: {
-                            //好，这里就是重头戏了，定义一个list，然后根据所以取得不同的值，这样就实现了，
-                        color: function(params) {
-                            // build a color map as your need.
-                            var colorList = [
-                              'rgb(164,205,238)','rgb(42,170,227)','rgb(25,46,94)','rgb(195,229,235)'
-                            ];
-                            return colorList[params.dataIndex]
-                        },
-　　　　　　　　　　　　　　//以下为是否显示，显示位置和显示格式的设置了
                         label : {show: true, position: 'insideRight'}
                                 }
                      },
@@ -62,7 +54,9 @@ weibo_userInfo_statistics = {
             name:'未填写人数',
             type:'bar',
             stack: '总量',
-            itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
+            barWidth: 50,
+            itemStyle : { normal: {
+                label : {show: true, position: 'insideRight'}}},
             data:[820, 832, 901, 1290, 1330]
         }
     ]
